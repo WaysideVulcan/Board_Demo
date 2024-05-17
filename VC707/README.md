@@ -4,7 +4,7 @@
 
 ## Brief description of the repository
 
-| Board | Description |
+| Demo | Description |
 |-|-|
 | Bist| 使用IPI Microblaze驗證開發版，並提供基於UART的測試介面 。 |
 | IBERT | 使用IBERT IP驗證Transceiver的眼圖及誤碼率。 |
