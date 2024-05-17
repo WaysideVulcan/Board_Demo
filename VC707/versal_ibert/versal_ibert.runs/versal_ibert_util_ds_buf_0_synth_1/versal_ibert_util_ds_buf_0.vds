@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon May  6 17:46:51 2024
+# Process ID: 3224
+# Current directory: C:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.runs/versal_ibert_util_ds_buf_0_synth_1
+# Command line: vivado.exe -log versal_ibert_util_ds_buf_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source versal_ibert_util_ds_buf_0.tcl
+# Log file: C:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.runs/versal_ibert_util_ds_buf_0_synth_1/versal_ibert_util_ds_buf_0.vds
+# Journal file: C:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.runs/versal_ibert_util_ds_buf_0_synth_1\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+source versal_ibert_util_ds_buf_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:47 . Memory (MB): peak = 583.402 ; gain = 181.723
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: versal_ibert_util_ds_buf_0
+Command: synth_design -top versal_ibert_util_ds_buf_0 -part xcvp1202-vsva2785-2MHP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvp1202'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvp1202'
+INFO: [Device 21-403] Loading part xcvp1202-vsva2785-2MHP-e-S
+INFO: [Common 17-83] Releasing license: Synthesis
+4 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+The application has run out of memory
+    while executing
+"synth_design -top versal_ibert_util_ds_buf_0 -part xcvp1202-vsva2785-2MHP-e-S -incremental_mode off -mode out_of_context"
+    invoked from within
+"if { $cacheID == "" } {
+close [open __synthesis_is_running__ w]
+
+OPTRACE "synth_design" START { }
+synth_design -top versal_ibert_util_ds_buf_0 -part x..."
+    (file "versal_ibert_util_ds_buf_0.tcl" line 117)
+INFO: [Common 17-206] Exiting Vivado at Mon May  6 17:51:57 2024...

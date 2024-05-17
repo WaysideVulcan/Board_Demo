@@ -1,0 +1,6 @@
+02:12:46 **** Incremental Build of configuration Debug for project bist_app ****
+make all 
+make: Nothing to be done for `all'.
+
+02:12:47 Build Finished (took 249ms)
+

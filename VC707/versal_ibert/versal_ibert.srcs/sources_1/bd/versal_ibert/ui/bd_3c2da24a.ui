@@ -1,0 +1,243 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.0345165",
+   "Default View_TopLeft":"-6345,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port bridge_refclkGTYP_REFCLK_X0Y12_diff_gt_ref_clock -pg 1 -lvl 0 -x 0 -y 8050 -defaultsOSRD
+preplace port GT_Serial -pg 1 -lvl 5 -x 1610 -y 7450 -defaultsOSRD
+preplace port bridge_refclkGTYP_REFCLK_X1Y0_diff_gt_ref_clock -pg 1 -lvl 0 -x 0 -y 7020 -defaultsOSRD
+preplace port GT_Serial_1 -pg 1 -lvl 5 -x 1610 -y 6420 -defaultsOSRD
+preplace port bridge_refclkGTYP_REFCLK_X1Y2_diff_gt_ref_clock -pg 1 -lvl 0 -x 0 -y 6080 -defaultsOSRD
+preplace port GT_Serial_2 -pg 1 -lvl 5 -x 1610 -y 5400 -defaultsOSRD
+preplace port bridge_refclkGTM_REFCLK_X0Y0_diff_gt_ref_clock -pg 1 -lvl 0 -x 0 -y 5780 -defaultsOSRD
+preplace port GT_Serial_3 -pg 1 -lvl 5 -x 1610 -y 4400 -defaultsOSRD
+preplace port bridge_refclkGTM_REFCLK_X0Y2_diff_gt_ref_clock -pg 1 -lvl 0 -x 0 -y 5920 -defaultsOSRD
+preplace port GT_Serial_4 -pg 1 -lvl 5 -x 1610 -y 3370 -defaultsOSRD
+preplace port bridge_refclkGTM_REFCLK_X0Y4_diff_gt_ref_clock -pg 1 -lvl 0 -x 0 -y 3120 -defaultsOSRD
+preplace port GT_Serial_5 -pg 1 -lvl 5 -x 1610 -y 2360 -defaultsOSRD
+preplace port bridge_refclkGTM_REFCLK_X0Y6_diff_gt_ref_clock -pg 1 -lvl 0 -x 0 -y 3920 -defaultsOSRD
+preplace port GT_Serial_6 -pg 1 -lvl 5 -x 1610 -y 320 -defaultsOSRD
+preplace port bridge_refclkGTM_REFCLK_X0Y8_diff_gt_ref_clock -pg 1 -lvl 0 -x 0 -y 4110 -defaultsOSRD
+preplace port GT_Serial_7 -pg 1 -lvl 5 -x 1610 -y 1330 -defaultsOSRD
+preplace inst versal_cips_0 -pg 1 -lvl 2 -x 400 -y 6580 -defaultsOSRD
+preplace inst bridge_refclkGTYP_REFCLK_X0Y12 -pg 1 -lvl 3 -x 780 -y 7500 -defaultsOSRD
+preplace inst gt_quad_base -pg 1 -lvl 4 -x 1350 -y 7650 -defaultsOSRD
+preplace inst bufg_gt -pg 1 -lvl 2 -x 400 -y 7550 -defaultsOSRD
+preplace inst bufg_gt_1 -pg 1 -lvl 2 -x 400 -y 7350 -defaultsOSRD
+preplace inst urlp -pg 1 -lvl 2 -x 400 -y 7700 -defaultsOSRD
+preplace inst xlcp -pg 1 -lvl 1 -x 130 -y 7700 -defaultsOSRD
+preplace inst util_ds_buf -pg 1 -lvl 3 -x 780 -y 8060 -defaultsOSRD
+preplace inst bridge_refclkGTYP_REFCLK_X1Y0 -pg 1 -lvl 3 -x 780 -y 6470 -defaultsOSRD
+preplace inst gt_quad_base_1 -pg 1 -lvl 4 -x 1350 -y 6620 -defaultsOSRD
+preplace inst bufg_gt_2 -pg 1 -lvl 2 -x 400 -y 6390 -defaultsOSRD
+preplace inst bufg_gt_3 -pg 1 -lvl 2 -x 400 -y 6190 -defaultsOSRD
+preplace inst urlp_1 -pg 1 -lvl 2 -x 400 -y 6720 -defaultsOSRD
+preplace inst xlcp_1 -pg 1 -lvl 1 -x 130 -y 6720 -defaultsOSRD
+preplace inst util_ds_buf_1 -pg 1 -lvl 3 -x 780 -y 7030 -defaultsOSRD
+preplace inst bridge_refclkGTYP_REFCLK_X1Y2 -pg 1 -lvl 3 -x 780 -y 5450 -defaultsOSRD
+preplace inst gt_quad_base_2 -pg 1 -lvl 4 -x 1350 -y 5600 -defaultsOSRD
+preplace inst bufg_gt_4 -pg 1 -lvl 2 -x 400 -y 5500 -defaultsOSRD
+preplace inst bufg_gt_5 -pg 1 -lvl 2 -x 400 -y 5300 -defaultsOSRD
+preplace inst urlp_2 -pg 1 -lvl 2 -x 400 -y 5650 -defaultsOSRD
+preplace inst xlcp_2 -pg 1 -lvl 1 -x 130 -y 5650 -defaultsOSRD
+preplace inst util_ds_buf_2 -pg 1 -lvl 3 -x 780 -y 6090 -defaultsOSRD
+preplace inst bridge_refclkGTM_REFCLK_X0Y0 -pg 1 -lvl 3 -x 780 -y 4590 -defaultsOSRD
+preplace inst gt_quad_base_3 -pg 1 -lvl 4 -x 1350 -y 4600 -defaultsOSRD
+preplace inst bufg_gt_6 -pg 1 -lvl 2 -x 400 -y 4640 -defaultsOSRD
+preplace inst bufg_gt_7 -pg 1 -lvl 2 -x 400 -y 4440 -defaultsOSRD
+preplace inst urlp_3 -pg 1 -lvl 2 -x 400 -y 4790 -defaultsOSRD
+preplace inst xlcp_3 -pg 1 -lvl 1 -x 130 -y 4790 -defaultsOSRD
+preplace inst util_ds_buf_3 -pg 1 -lvl 3 -x 780 -y 5790 -defaultsOSRD
+preplace inst xlconstant -pg 1 -lvl 2 -x 400 -y 5840 -defaultsOSRD
+preplace inst bridge_refclkGTM_REFCLK_X0Y2 -pg 1 -lvl 3 -x 780 -y 3560 -defaultsOSRD
+preplace inst gt_quad_base_4 -pg 1 -lvl 4 -x 1350 -y 3570 -defaultsOSRD
+preplace inst bufg_gt_8 -pg 1 -lvl 2 -x 400 -y 3610 -defaultsOSRD
+preplace inst bufg_gt_9 -pg 1 -lvl 2 -x 400 -y 3410 -defaultsOSRD
+preplace inst urlp_4 -pg 1 -lvl 2 -x 400 -y 3760 -defaultsOSRD
+preplace inst xlcp_4 -pg 1 -lvl 1 -x 130 -y 3760 -defaultsOSRD
+preplace inst util_ds_buf_4 -pg 1 -lvl 3 -x 780 -y 5930 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 2 -x 400 -y 5980 -defaultsOSRD
+preplace inst bridge_refclkGTM_REFCLK_X0Y4 -pg 1 -lvl 3 -x 780 -y 2550 -defaultsOSRD
+preplace inst gt_quad_base_5 -pg 1 -lvl 4 -x 1350 -y 2560 -defaultsOSRD
+preplace inst bufg_gt_10 -pg 1 -lvl 2 -x 400 -y 2600 -defaultsOSRD
+preplace inst bufg_gt_11 -pg 1 -lvl 2 -x 400 -y 2400 -defaultsOSRD
+preplace inst urlp_5 -pg 1 -lvl 2 -x 400 -y 2750 -defaultsOSRD
+preplace inst xlcp_5 -pg 1 -lvl 1 -x 130 -y 2750 -defaultsOSRD
+preplace inst util_ds_buf_5 -pg 1 -lvl 3 -x 780 -y 3130 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 2 -x 400 -y 3180 -defaultsOSRD
+preplace inst bridge_refclkGTM_REFCLK_X0Y6 -pg 1 -lvl 3 -x 780 -y 510 -defaultsOSRD
+preplace inst gt_quad_base_6 -pg 1 -lvl 4 -x 1350 -y 520 -defaultsOSRD
+preplace inst bufg_gt_12 -pg 1 -lvl 2 -x 400 -y 560 -defaultsOSRD
+preplace inst bufg_gt_13 -pg 1 -lvl 2 -x 400 -y 360 -defaultsOSRD
+preplace inst urlp_6 -pg 1 -lvl 2 -x 400 -y 710 -defaultsOSRD
+preplace inst xlcp_6 -pg 1 -lvl 1 -x 130 -y 710 -defaultsOSRD
+preplace inst util_ds_buf_6 -pg 1 -lvl 3 -x 780 -y 3930 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 2 -x 400 -y 3980 -defaultsOSRD
+preplace inst bridge_refclkGTM_REFCLK_X0Y8 -pg 1 -lvl 3 -x 780 -y 1520 -defaultsOSRD
+preplace inst gt_quad_base_7 -pg 1 -lvl 4 -x 1350 -y 1530 -defaultsOSRD
+preplace inst bufg_gt_14 -pg 1 -lvl 2 -x 400 -y 1570 -defaultsOSRD
+preplace inst bufg_gt_15 -pg 1 -lvl 2 -x 400 -y 1370 -defaultsOSRD
+preplace inst urlp_7 -pg 1 -lvl 2 -x 400 -y 1720 -defaultsOSRD
+preplace inst xlcp_7 -pg 1 -lvl 1 -x 130 -y 1720 -defaultsOSRD
+preplace inst util_ds_buf_7 -pg 1 -lvl 3 -x 780 -y 4120 -defaultsOSRD
+preplace inst xlconstant_4 -pg 1 -lvl 2 -x 400 -y 4170 -defaultsOSRD
+preplace netloc gt_quad_base_ch0_rxoutclk 1 1 4 230 8160 NJ 8160 NJ 8160 1570
+preplace netloc bufg_gt_usrclk 1 2 2 570 7810 980
+preplace netloc gt_quad_base_ch0_txoutclk 1 1 4 240 8150 NJ 8150 NJ 8150 1580
+preplace netloc bufg_gt_1_usrclk 1 2 2 550 7800 1000
+preplace netloc urlp_Res 1 2 1 580J 7410n
+preplace netloc xlcp_dout 1 1 1 NJ 7700
+preplace netloc gt_quad_base_gtpowergood 1 0 5 40 7790 NJ 7790 NJ 7790 1130J 7150 1570
+preplace netloc util_ds_buf_IBUF_OUT 1 3 1 NJ 8050
+preplace netloc versal_cips_0_pl0_ref_clk 1 2 2 560 7110 1080
+preplace netloc gt_quad_base_1_ch0_rxoutclk 1 1 4 230 7140 NJ 7140 NJ 7140 1570
+preplace netloc bufg_gt_2_usrclk 1 2 2 580 6780 980
+preplace netloc gt_quad_base_1_ch0_txoutclk 1 1 4 250 7130 NJ 7130 NJ 7130 1580
+preplace netloc bufg_gt_3_usrclk 1 2 2 550 6770 1000
+preplace netloc urlp_1_Res 1 2 1 570J 6380n
+preplace netloc xlcp_1_dout 1 1 1 NJ 6720
+preplace netloc gt_quad_base_1_gtpowergood 1 0 5 40 6780 NJ 6780 570J 6760 1130J 6120 1570
+preplace netloc util_ds_buf_1_IBUF_OUT 1 3 1 NJ 7020
+preplace netloc gt_quad_base_2_ch0_rxoutclk 1 1 4 240 5900 570J 5860 1020J 6100 1570
+preplace netloc bufg_gt_4_usrclk 1 2 2 580 6000 1120
+preplace netloc gt_quad_base_2_ch0_txoutclk 1 1 4 230 6040 580J 6020 980J 6110 1580
+preplace netloc bufg_gt_5_usrclk 1 2 2 550 6010 1110
+preplace netloc urlp_2_Res 1 2 1 570J 5360n
+preplace netloc xlcp_2_dout 1 1 1 NJ 5650
+preplace netloc gt_quad_base_2_gtpowergood 1 0 5 30 7120 NJ 7120 NJ 7120 NJ 7120 1590
+preplace netloc util_ds_buf_2_IBUF_OUT 1 3 1 1130J 6000n
+preplace netloc gt_quad_base_3_ch0_rxoutclk 1 1 4 250 5100 NJ 5100 NJ 5100 1570
+preplace netloc bufg_gt_6_usrclk 1 2 2 580 4920 980
+preplace netloc gt_quad_base_3_ch0_txoutclk 1 1 4 240 4890 NJ 4890 1110J 4100 1590
+preplace netloc bufg_gt_7_usrclk 1 2 2 550 4900 1120
+preplace netloc urlp_3_Res 1 2 1 570J 4500n
+preplace netloc xlcp_3_dout 1 1 1 NJ 4790
+preplace netloc gt_quad_base_3_gtpowergood 1 0 5 40 4880 NJ 4880 NJ 4880 1090J 4090 1570
+preplace netloc util_ds_buf_3_IBUFDS_GTME5_O 1 3 1 1120 5000n
+preplace netloc xlconstant_dout 1 2 1 570J 5800n
+preplace netloc gt_quad_base_4_ch0_rxoutclk 1 1 4 250 4040 NJ 4040 1060J 4080 1570
+preplace netloc bufg_gt_8_usrclk 1 2 2 580 4050 1050
+preplace netloc gt_quad_base_4_ch0_txoutclk 1 1 4 240 3860 NJ 3860 1070J 4070 1590
+preplace netloc bufg_gt_9_usrclk 1 2 2 570 4000 1040
+preplace netloc urlp_4_Res 1 2 1 550J 3470n
+preplace netloc xlcp_4_dout 1 1 1 NJ 3760
+preplace netloc gt_quad_base_4_gtpowergood 1 0 5 40 3850 NJ 3850 NJ 3850 1030J 3070 1570
+preplace netloc util_ds_buf_4_IBUFDS_GTME5_O 1 3 1 1100 3970n
+preplace netloc xlconstant_1_dout 1 2 1 570J 5940n
+preplace netloc gt_quad_base_5_ch0_rxoutclk 1 1 4 250 3060 NJ 3060 NJ 3060 1570
+preplace netloc bufg_gt_10_usrclk 1 2 2 580 2880 1100
+preplace netloc gt_quad_base_5_ch0_txoutclk 1 1 4 240 2850 NJ 2850 1000J 2050 1590
+preplace netloc bufg_gt_11_usrclk 1 2 2 570 2840 1100
+preplace netloc urlp_5_Res 1 2 1 550J 2460n
+preplace netloc xlcp_5_dout 1 1 1 NJ 2750
+preplace netloc gt_quad_base_5_gtpowergood 1 0 5 40 2860 NJ 2860 NJ 2860 1010J 2060 1570
+preplace netloc util_ds_buf_5_IBUFDS_GTME5_O 1 3 1 1000 2960n
+preplace netloc xlconstant_2_dout 1 2 1 550J 3140n
+preplace netloc gt_quad_base_6_ch0_rxoutclk 1 1 4 250 1020 NJ 1020 NJ 1020 1570
+preplace netloc bufg_gt_12_usrclk 1 2 2 580 840 980
+preplace netloc gt_quad_base_6_ch0_txoutclk 1 1 4 240 810 NJ 810 990J 20 1590
+preplace netloc bufg_gt_13_usrclk 1 2 2 570 820 1080
+preplace netloc urlp_6_Res 1 2 1 550J 420n
+preplace netloc xlcp_6_dout 1 1 1 NJ 710
+preplace netloc gt_quad_base_6_gtpowergood 1 0 5 40 800 NJ 800 NJ 800 980J 10 1570
+preplace netloc util_ds_buf_6_IBUFDS_GTME5_O 1 3 1 990 920n
+preplace netloc xlconstant_3_dout 1 2 1 550J 3940n
+preplace netloc gt_quad_base_7_ch0_rxoutclk 1 1 4 250 2040 NJ 2040 NJ 2040 1570
+preplace netloc bufg_gt_14_usrclk 1 2 2 580 1850 1100
+preplace netloc gt_quad_base_7_ch0_txoutclk 1 1 4 240 1820 NJ 1820 980J 1030 1570
+preplace netloc bufg_gt_15_usrclk 1 2 2 570 1810 1100
+preplace netloc urlp_7_Res 1 2 1 550J 1430n
+preplace netloc xlcp_7_dout 1 1 1 NJ 1720
+preplace netloc gt_quad_base_7_gtpowergood 1 0 5 40 2030 NJ 2030 NJ 2030 NJ 2030 1590
+preplace netloc util_ds_buf_7_IBUFDS_GTME5_O 1 3 1 1020 1930n
+preplace netloc xlconstant_4_dout 1 2 1 550J 4130n
+preplace netloc bridge_refclkGTYP_REFCLK_X0Y12_GT_TX0 1 3 1 N 7270
+preplace netloc bridge_refclkGTYP_REFCLK_X0Y12_GT_TX1 1 3 1 N 7290
+preplace netloc bridge_refclkGTYP_REFCLK_X0Y12_GT_TX2 1 3 1 N 7310
+preplace netloc bridge_refclkGTYP_REFCLK_X0Y12_GT_TX3 1 3 1 N 7330
+preplace netloc bridge_refclkGTYP_REFCLK_X0Y12_GT_RX0 1 3 1 N 7350
+preplace netloc bridge_refclkGTYP_REFCLK_X0Y12_GT_RX1 1 3 1 N 7370
+preplace netloc bridge_refclkGTYP_REFCLK_X0Y12_GT_RX2 1 3 1 N 7390
+preplace netloc bridge_refclkGTYP_REFCLK_X0Y12_GT_RX3 1 3 1 N 7410
+preplace netloc bridge_refclkGTYP_REFCLK_X0Y12_diff_gt_ref_clock_1 1 0 3 NJ 8050 NJ 8050 NJ
+preplace netloc gt_quad_base_GT_Serial 1 4 1 NJ 7450
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y0_GT_TX0 1 3 1 N 6240
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y0_GT_TX1 1 3 1 N 6260
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y0_GT_TX2 1 3 1 N 6280
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y0_GT_TX3 1 3 1 N 6300
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y0_GT_RX0 1 3 1 N 6320
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y0_GT_RX1 1 3 1 N 6340
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y0_GT_RX2 1 3 1 N 6360
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y0_GT_RX3 1 3 1 N 6380
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y0_diff_gt_ref_clock_1 1 0 3 NJ 7020 NJ 7020 NJ
+preplace netloc gt_quad_base_1_GT_Serial 1 4 1 NJ 6420
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y2_GT_TX0 1 3 1 N 5220
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y2_GT_TX1 1 3 1 N 5240
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y2_GT_TX2 1 3 1 N 5260
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y2_GT_TX3 1 3 1 N 5280
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y2_GT_RX0 1 3 1 N 5300
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y2_GT_RX1 1 3 1 N 5320
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y2_GT_RX2 1 3 1 N 5340
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y2_GT_RX3 1 3 1 N 5360
+preplace netloc bridge_refclkGTYP_REFCLK_X1Y2_diff_gt_ref_clock_1 1 0 3 NJ 6080 NJ 6080 NJ
+preplace netloc gt_quad_base_2_GT_Serial 1 4 1 NJ 5400
+preplace netloc bridge_refclkGTM_REFCLK_X0Y0_GT_TX0 1 3 1 N 4360
+preplace netloc bridge_refclkGTM_REFCLK_X0Y0_GT_TX1 1 3 1 N 4380
+preplace netloc bridge_refclkGTM_REFCLK_X0Y0_GT_TX2 1 3 1 N 4400
+preplace netloc bridge_refclkGTM_REFCLK_X0Y0_GT_TX3 1 3 1 N 4420
+preplace netloc bridge_refclkGTM_REFCLK_X0Y0_GT_RX0 1 3 1 N 4440
+preplace netloc bridge_refclkGTM_REFCLK_X0Y0_GT_RX1 1 3 1 N 4460
+preplace netloc bridge_refclkGTM_REFCLK_X0Y0_GT_RX2 1 3 1 N 4480
+preplace netloc bridge_refclkGTM_REFCLK_X0Y0_GT_RX3 1 3 1 N 4500
+preplace netloc bridge_refclkGTM_REFCLK_X0Y0_diff_gt_ref_clock_1 1 0 3 NJ 5780 NJ 5780 NJ
+preplace netloc gt_quad_base_3_GT_Serial 1 4 1 NJ 4400
+preplace netloc bridge_refclkGTM_REFCLK_X0Y2_GT_TX0 1 3 1 N 3330
+preplace netloc bridge_refclkGTM_REFCLK_X0Y2_GT_TX1 1 3 1 N 3350
+preplace netloc bridge_refclkGTM_REFCLK_X0Y2_GT_TX2 1 3 1 N 3370
+preplace netloc bridge_refclkGTM_REFCLK_X0Y2_GT_TX3 1 3 1 N 3390
+preplace netloc bridge_refclkGTM_REFCLK_X0Y2_GT_RX0 1 3 1 N 3410
+preplace netloc bridge_refclkGTM_REFCLK_X0Y2_GT_RX1 1 3 1 N 3430
+preplace netloc bridge_refclkGTM_REFCLK_X0Y2_GT_RX2 1 3 1 N 3450
+preplace netloc bridge_refclkGTM_REFCLK_X0Y2_GT_RX3 1 3 1 N 3470
+preplace netloc bridge_refclkGTM_REFCLK_X0Y2_diff_gt_ref_clock_1 1 0 3 NJ 5920 NJ 5920 NJ
+preplace netloc gt_quad_base_4_GT_Serial 1 4 1 NJ 3370
+preplace netloc bridge_refclkGTM_REFCLK_X0Y4_GT_TX0 1 3 1 N 2320
+preplace netloc bridge_refclkGTM_REFCLK_X0Y4_GT_TX1 1 3 1 N 2340
+preplace netloc bridge_refclkGTM_REFCLK_X0Y4_GT_TX2 1 3 1 N 2360
+preplace netloc bridge_refclkGTM_REFCLK_X0Y4_GT_TX3 1 3 1 N 2380
+preplace netloc bridge_refclkGTM_REFCLK_X0Y4_GT_RX0 1 3 1 N 2400
+preplace netloc bridge_refclkGTM_REFCLK_X0Y4_GT_RX1 1 3 1 N 2420
+preplace netloc bridge_refclkGTM_REFCLK_X0Y4_GT_RX2 1 3 1 N 2440
+preplace netloc bridge_refclkGTM_REFCLK_X0Y4_GT_RX3 1 3 1 N 2460
+preplace netloc bridge_refclkGTM_REFCLK_X0Y4_diff_gt_ref_clock_1 1 0 3 NJ 3120 NJ 3120 NJ
+preplace netloc gt_quad_base_5_GT_Serial 1 4 1 NJ 2360
+preplace netloc bridge_refclkGTM_REFCLK_X0Y6_GT_TX0 1 3 1 N 280
+preplace netloc bridge_refclkGTM_REFCLK_X0Y6_GT_TX1 1 3 1 N 300
+preplace netloc bridge_refclkGTM_REFCLK_X0Y6_GT_TX2 1 3 1 N 320
+preplace netloc bridge_refclkGTM_REFCLK_X0Y6_GT_TX3 1 3 1 N 340
+preplace netloc bridge_refclkGTM_REFCLK_X0Y6_GT_RX0 1 3 1 N 360
+preplace netloc bridge_refclkGTM_REFCLK_X0Y6_GT_RX1 1 3 1 N 380
+preplace netloc bridge_refclkGTM_REFCLK_X0Y6_GT_RX2 1 3 1 N 400
+preplace netloc bridge_refclkGTM_REFCLK_X0Y6_GT_RX3 1 3 1 N 420
+preplace netloc bridge_refclkGTM_REFCLK_X0Y6_diff_gt_ref_clock_1 1 0 3 NJ 3920 NJ 3920 NJ
+preplace netloc gt_quad_base_6_GT_Serial 1 4 1 NJ 320
+preplace netloc bridge_refclkGTM_REFCLK_X0Y8_GT_TX0 1 3 1 N 1290
+preplace netloc bridge_refclkGTM_REFCLK_X0Y8_GT_TX1 1 3 1 N 1310
+preplace netloc bridge_refclkGTM_REFCLK_X0Y8_GT_TX2 1 3 1 N 1330
+preplace netloc bridge_refclkGTM_REFCLK_X0Y8_GT_TX3 1 3 1 N 1350
+preplace netloc bridge_refclkGTM_REFCLK_X0Y8_GT_RX0 1 3 1 N 1370
+preplace netloc bridge_refclkGTM_REFCLK_X0Y8_GT_RX1 1 3 1 N 1390
+preplace netloc bridge_refclkGTM_REFCLK_X0Y8_GT_RX2 1 3 1 N 1410
+preplace netloc bridge_refclkGTM_REFCLK_X0Y8_GT_RX3 1 3 1 N 1430
+preplace netloc bridge_refclkGTM_REFCLK_X0Y8_diff_gt_ref_clock_1 1 0 3 NJ 4110 NJ 4110 NJ
+preplace netloc gt_quad_base_7_GT_Serial 1 4 1 NJ 1330
+levelinfo -pg 1 0 130 400 780 1350 1610
+pagesize -pg 1 -db -bbox -sgen -400 0 1740 8170
+"
+}
+{
+   "da_cips_cnt":"1",
+   "da_gt_ips_cnt":"8"
+}

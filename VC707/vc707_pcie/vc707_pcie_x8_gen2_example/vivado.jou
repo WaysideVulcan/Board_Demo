@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:22:08 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Sun May 03 16:54:34 2015
+# Process ID: 8196
+# Log file: c:/vc707_pcie/vc707_pcie_x8_gen2_example/vivado.log
+# Journal file: c:/vc707_pcie/vc707_pcie_x8_gen2_example\vivado.jou
+#-----------------------------------------------------------
+source c:/vc707_pcie/vc707_pcie.srcs/sources_1/ip/vc707_pcie_x8_gen2/vc707_pcie_x8_gen2_ex.tcl

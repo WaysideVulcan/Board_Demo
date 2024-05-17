@@ -1,0 +1,114 @@
+*****New Version*****
+Channel 0:
+Duplex
+TX Master: Channel 0
+RX Master: Channel 0
+Tx Net: PROT0.D1
+Rx Net: PROT0.D1
+Number of Tx Rates: 1
+Number of Rx Rates: 0
+
+Channel 1:
+Duplex
+TX Master: Channel 0
+RX Master: Channel 0
+Tx Net: PROT0.D1
+Rx Net: PROT0.D1
+Number of Tx Rates: 1
+Number of Rx Rates: 0
+
+Channel 2:
+Duplex
+TX Master: Channel 0
+RX Master: Channel 0
+Tx Net: PROT0.D1
+Rx Net: PROT0.D1
+Number of Tx Rates: 1
+Number of Rx Rates: 0
+
+Channel 3:
+Duplex
+TX Master: Channel 0
+RX Master: Channel 0
+Tx Net: PROT0.D1
+Rx Net: PROT0.D1
+Number of Tx Rates: 1
+Number of Rx Rates: 0
+
+Parsing Channel 0 Duplex
+Parsing Channel 1 Duplex
+Parsing Channel 2 Duplex
+Parsing Channel 3 Duplex
+Masked Attribute List
+Non-Masked Attribute List
+CH_0_TX_PCS_CFG0
+CH_1_TX_PCS_CFG0
+CH_2_TX_PCS_CFG0
+CH_3_TX_PCS_CFG0
+
+Channel 0 Writable Lists
+
+***TX Masked Writable Lists***
+***TX Writable Lists***
+Name: TX_PCS_CFG0
+Address: 22
+TX Channel 1 Skipped
+TX Channel 2 Skipped
+TX Channel 3 Skipped
+***RX Masked Writable Lists***
+***RX Writable Lists***
+RX Channel 1 Skipped
+RX Channel 2 Skipped
+RX Channel 3 Skipped
+***Writing TX Rate Table***
+
+TX Channel 0
+
+Rate: 0
+TX Masked
+TX Normal
+
+No Burst No Rom
+Name: TX_PCS_CFG0
+Address: 22
+Value: 13337
+
+TX Channel 1
+
+TX Channel 2
+
+TX Channel 3
+***Writing RX Rate Table***
+
+RX Channel 0
+
+RX Channel 1
+
+RX Channel 2
+
+RX Channel 3
+***Rate Table Structure***
+
+Channel 0
+Rate Block Size: 2
+Number of Rates: 1
+
+Channel 1
+Rate Block Size: 0
+Number of Rates: 1
+
+Channel 2
+Rate Block Size: 0
+Number of Rates: 1
+
+Channel 3
+Rate Block Size: 0
+Number of Rates: 1
+
+Channel 0
+
+Channel 1
+
+Channel 2
+
+Channel 3

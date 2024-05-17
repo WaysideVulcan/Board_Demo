@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon May  6 10:57:56 2024
+# Process ID: 22740
+# Current directory: c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/rfdc_ex_dac_source_i_0_synth_1
+# Command line: vivado.exe -log rfdc_ex_dac_source_i_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rfdc_ex_dac_source_i_0.tcl
+# Log file: c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/rfdc_ex_dac_source_i_0_synth_1/rfdc_ex_dac_source_i_0.vds
+# Journal file: c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/rfdc_ex_dac_source_i_0_synth_1\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+source rfdc_ex_dac_source_i_0.tcl -notrace

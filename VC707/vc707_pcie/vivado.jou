@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon May  6 11:27:00 2024
+# Process ID: 15404
+# Current directory: C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16416 C:\Vulcan\Design_Tool\Board_Demo\VC707\vc707_pcie\vc707_pcie.xpr
+# Log file: C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie/vivado.log
+# Journal file: C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie/vc707_pcie.xpr
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -srcset vc707_pcie_x8_gen2 -vlnv xilinx.com:ip:pcie_7x:3.3 [get_ips  vc707_pcie_x8_gen2] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips vc707_pcie_x8_gen2] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+open_example_project -force -dir C:/Vulcan/Design_Tool/Board_Demo/VC707 [get_ips  vc707_pcie_x8_gen2]

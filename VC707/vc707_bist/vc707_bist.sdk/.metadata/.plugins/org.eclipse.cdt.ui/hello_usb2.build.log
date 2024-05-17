@@ -1,0 +1,6 @@
+02:12:46 **** Incremental Build of configuration Debug for project hello_usb2 ****
+make all 
+make: Nothing to be done for `all'.
+
+02:12:46 Build Finished (took 199ms)
+

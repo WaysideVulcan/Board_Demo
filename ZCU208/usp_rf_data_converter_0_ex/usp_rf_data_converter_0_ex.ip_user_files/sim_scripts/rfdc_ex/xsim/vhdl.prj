@@ -1,0 +1,14 @@
+vhdl xpm  \
+"C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_VCOMP.vhd" \
+
+vhdl lib_cdc_v1_0_2  \
+"../../../../usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
+
+vhdl proc_sys_reset_v5_0_14  \
+"../../../../usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/408c/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_a15e_psr_aclk_0.vhd" \
+
+# Do not sort compile order
+nosort

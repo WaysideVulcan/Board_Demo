@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon May  6 11:28:41 2024
+# Process ID: 23140
+# Current directory: c:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex
+# Command line: vivado.exe -notrace -source c:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie/vc707_pcie.gen/sources_1/ip/vc707_pcie_x8_gen2/vc707_pcie_x8_gen2_ex.tcl
+# Log file: c:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vivado.log
+# Journal file: c:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+start_gui
+source c:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie/vc707_pcie.gen/sources_1/ip/vc707_pcie_x8_gen2/vc707_pcie_x8_gen2_ex.tcl -notrace
+INFO: [open_example_project] Creating new example project...
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1860.863 ; gain = 333.094
+INFO: [open_example_project] Importing original IP ...
+WARNING: [IP_Flow 19-11772] Failed to register IP shared directory path 'c:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie/vc707_pcie.gen/sources_1/ip/vc707_pcie_x8_gen2/' for IP 'vc707_pcie_x8_gen2'.
+WARNING: [IP_Flow 19-11772] Failed to register IP shared directory path 'c:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie.gen/sources_1/ip/vc707_pcie_x8_gen2/' for IP 'vc707_pcie_x8_gen2'.
+INFO: [open_example_project] Generating the example project IP ...
+INFO: [IP_Flow 19-1706] Not generating 'Instantiation Template' target for IP 'vc707_pcie_x8_gen2'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'vc707_pcie_x8_gen2'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'vc707_pcie_x8_gen2'...
+INFO: [open_example_project] Adding example synthesis HDL files ...
+INFO: [open_example_project] Adding example synthesis miscellaneous files ...
+INFO: [open_example_project] Adding example XDC files ...
+INFO: [open_example_project] Adding simulation HDL files ...
+INFO: [open_example_project] Rebuilding top IP...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'vc707_pcie_x8_gen2'...
+INFO: [exportsim-Tcl-40] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (AMD Vivado Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'C:/Xilinx/Vivado/2023.2/data/xsim'
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.ip_user_files/sim_scripts/vc707_pcie_x8_gen2/xsim/vc707_pcie_x8_gen2.sh'
+INFO: [SIM-utils-43] Exported 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.ip_user_files/sim_scripts/vc707_pcie_x8_gen2/xsim/sys_clk_gen_ps_v.txt'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Siemens ModelSim Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.cache/compile_simlib/modelsim'
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.ip_user_files/sim_scripts/vc707_pcie_x8_gen2/modelsim/vc707_pcie_x8_gen2.sh'
+INFO: [SIM-utils-43] Exported 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.ip_user_files/sim_scripts/vc707_pcie_x8_gen2/modelsim/sys_clk_gen_ps_v.txt'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Siemens Questa Advanced Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.cache/compile_simlib/questa'
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.ip_user_files/sim_scripts/vc707_pcie_x8_gen2/questa/vc707_pcie_x8_gen2.sh'
+INFO: [SIM-utils-43] Exported 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.ip_user_files/sim_scripts/vc707_pcie_x8_gen2/questa/sys_clk_gen_ps_v.txt'
+INFO: [exportsim-Tcl-5] Generating 3-step script for 'xcelium'. To create a single-step script, use the -single_step switch.
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.cache/compile_simlib/xcelium'
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.ip_user_files/sim_scripts/vc707_pcie_x8_gen2/xcelium/vc707_pcie_x8_gen2.sh'
+INFO: [SIM-utils-43] Exported 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.ip_user_files/sim_scripts/vc707_pcie_x8_gen2/xcelium/sys_clk_gen_ps_v.txt'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.cache/compile_simlib/vcs'
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.ip_user_files/sim_scripts/vc707_pcie_x8_gen2/vcs/vc707_pcie_x8_gen2.sh'
+INFO: [SIM-utils-43] Exported 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.ip_user_files/sim_scripts/vc707_pcie_x8_gen2/vcs/sys_clk_gen_ps_v.txt'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.cache/compile_simlib/riviera'
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.ip_user_files/sim_scripts/vc707_pcie_x8_gen2/riviera/vc707_pcie_x8_gen2.sh'
+INFO: [SIM-utils-43] Exported 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.ip_user_files/sim_scripts/vc707_pcie_x8_gen2/riviera/sys_clk_gen_ps_v.txt'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.cache/compile_simlib/activehdl'
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.ip_user_files/sim_scripts/vc707_pcie_x8_gen2/activehdl/vc707_pcie_x8_gen2.sh'
+INFO: [SIM-utils-43] Exported 'C:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.ip_user_files/sim_scripts/vc707_pcie_x8_gen2/activehdl/sys_clk_gen_ps_v.txt'
+INFO: [open_example_project] Open Example Project completed
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 20
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: vc707_pcie_x8_gen2
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Mon May  6 11:29:17 2024] Launched vc707_pcie_x8_gen2_synth_1...
+Run output will be captured here: c:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.runs/vc707_pcie_x8_gen2_synth_1/runme.log
+[Mon May  6 11:29:17 2024] Launched synth_1...
+Run output will be captured here: c:/Vulcan/Design_Tool/Board_Demo/VC707/vc707_pcie_x8_gen2_ex/vc707_pcie_x8_gen2_ex.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  6 11:30:55 2024...

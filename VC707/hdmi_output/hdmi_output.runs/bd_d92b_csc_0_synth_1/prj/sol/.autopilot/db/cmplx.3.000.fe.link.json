@@ -1,0 +1,112 @@
+{
+  "0": {
+    "basicblocks": 5,
+    "calls": "2 5 6",
+    "file": "v_csc.cpp",
+    "fileloc": 220,
+    "instructions": 429,
+    "loads": {
+      "L": 4,
+      "T": 36
+    },
+    "name": "v_csc",
+    "stores": {
+      "L": 36
+    },
+    "total_instructions": 2266
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "4",
+    "file": "hls_axi_io.h",
+    "fileloc": 83,
+    "instructions": 6,
+    "loads": {
+      "L": 1
+    },
+    "name": "AXIGetBitFields<36, ap_uint<12> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 74
+  },
+  "2": {
+    "basicblocks": 44,
+    "calls": "7 3 3 1 1 1",
+    "file": "v_csc.cpp",
+    "fileloc": 512,
+    "instructions": 186,
+    "loads": {
+      "G": 1,
+      "L": 9
+    },
+    "name": "AXIvideo2MultiPixStream",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 621
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
+  },
+  "4": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "hls_axi_io.h",
+    "fileloc": 60,
+    "instructions": 25,
+    "loads": {
+      "L": 1
+    },
+    "name": "AXIGetBitFields<36, ap_uint<12> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 68
+  },
+  "5": {
+    "basicblocks": 50,
+    "calls": "7 7",
+    "file": "v_csc.cpp",
+    "fileloc": 91,
+    "instructions": 325,
+    "loads": {
+      "L": 28
+    },
+    "name": "v_csc_core",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 463
+  },
+  "6": {
+    "basicblocks": 35,
+    "calls": "7 3 3",
+    "file": "v_csc.cpp",
+    "fileloc": 611,
+    "instructions": 241,
+    "loads": {
+      "L": 12
+    },
+    "name": "MultiPixStream2AXIvideo",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 743
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_video_core.h",
+    "fileloc": 196,
+    "instructions": 5,
+    "name": "Scalar",
+    "total_instructions": 5
+  }
+}

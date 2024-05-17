@@ -1,0 +1,103 @@
+14:02:34 INFO  : Processing command line option -hwspec C:/vc707_bist/vc707_bist.sdk/system_wrapper.hdf.
+14:02:40 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2464
+14:02:42 INFO  : XSDB server has started successfully.
+14:02:48 INFO  : BSP Project P/standalone_bsp_0 has been successfully migrated.
+14:04:36 INFO  : Successfully generated C:\vc707_bist\vc707_bist.sdk\lwip_echo_server\src\lscript.ld.
+14:04:36 INFO  : Applying linker script to all configurations of project lwip_echo_server.
+14:04:36 INFO  : Setting rebuild state to true for all configurations of project lwip_echo_server.
+00:58:15 INFO  : Processing command line option -hwspec C:/vc707_bist/vc707_bist.sdk/system_wrapper.hdf.
+00:58:16 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+00:58:16 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1430704306495,  Project:1429729905993
+00:58:16 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from C:/vc707_bist/vc707_bist.sdk/system_wrapper.hdf.
+00:58:16 INFO  : Copied contents of C:/vc707_bist/vc707_bist.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+00:58:17 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:58:18 INFO  : 
+00:58:20 INFO  : 
+00:58:21 INFO  : Updating hardware inferred compiler options for lwip_echo_server.
+00:58:22 INFO  : Updating hardware inferred compiler options for bist_app.
+00:58:23 INFO  : Updating hardware inferred compiler options for hello_usb2.
+00:58:24 INFO  : Updating hardware inferred compiler options for iic_log.
+00:58:24 INFO  : Clearing existing target manager status.
+00:58:25 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:58:25 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+00:58:27 INFO  : XSDB server has started successfully.
+01:02:30 INFO  : BSP Project P/standalone_bsp_0 has been successfully migrated.
+01:02:35 INFO  : Refreshed build settings on project bist_app
+01:02:35 INFO  : Refreshed build settings on project hello_usb2
+01:02:35 INFO  : Refreshed build settings on project iic_log
+01:05:21 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:00:04 INFO  : Processing command line option -hwspec C:/vc707_bist/vc707_bist.sdk/system_wrapper.hdf.
+22:00:04 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+22:00:05 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1430739560414,  Project:1430704306495
+22:00:05 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from C:/vc707_bist/vc707_bist.sdk/system_wrapper.hdf.
+22:00:05 INFO  : Copied contents of C:/vc707_bist/vc707_bist.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+22:00:06 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:00:09 INFO  : 
+22:00:10 INFO  : 
+22:00:12 INFO  : Updating hardware inferred compiler options for lwip_echo_server.
+22:00:13 INFO  : Updating hardware inferred compiler options for bist_app.
+22:00:13 INFO  : Updating hardware inferred compiler options for hello_usb2.
+22:00:14 INFO  : Updating hardware inferred compiler options for iic_log.
+22:00:14 INFO  : Clearing existing target manager status.
+22:00:15 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:00:15 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+22:00:17 INFO  : XSDB server has started successfully.
+22:04:47 INFO  : Inferring section assignments and sizes from elf file: C:\vc707_bist\vc707_bist.sdk\bist_app\Debug\bist_app.elf
+22:05:21 INFO  : Inferring section assignments and sizes from elf file: C:\vc707_bist\vc707_bist.sdk\bist_app\Debug\bist_app.elf
+22:05:34 INFO  : Successfully generated C:\vc707_bist\vc707_bist.sdk\bist_app\src\lscript.ld.
+22:05:34 INFO  : Applying linker script to all configurations of project bist_app.
+22:05:34 INFO  : Setting rebuild state to true for all configurations of project bist_app.
+22:18:30 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+00:35:00 INFO  : Processing command line option -hwspec C:/vc707_bist/vc707_bist.sdk/system_wrapper.hdf.
+00:35:01 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+00:35:01 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1430975416584,  Project:1430739560414
+00:35:01 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from C:/vc707_bist/vc707_bist.sdk/system_wrapper.hdf.
+00:35:01 INFO  : Copied contents of C:/vc707_bist/vc707_bist.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+00:35:02 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:35:05 INFO  : 
+00:35:06 INFO  : 
+00:35:08 INFO  : Updating hardware inferred compiler options for lwip_echo_server.
+00:35:08 INFO  : Updating hardware inferred compiler options for bist_app.
+00:35:09 INFO  : Updating hardware inferred compiler options for hello_usb2.
+00:35:10 INFO  : Updating hardware inferred compiler options for iic_log.
+00:35:10 INFO  : Clearing existing target manager status.
+00:35:11 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:35:11 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+00:35:13 INFO  : XSDB server has started successfully.
+00:35:24 INFO  : Successfully generated C:\vc707_bist\vc707_bist.sdk\bist_app\src\lscript.ld.
+00:35:24 INFO  : Applying linker script to all configurations of project bist_app.
+00:35:24 INFO  : Setting rebuild state to true for all configurations of project bist_app.
+00:36:04 INFO  : Successfully generated C:\vc707_bist\vc707_bist.sdk\hello_usb2\src\lscript.ld.
+00:36:04 INFO  : Applying linker script to all configurations of project hello_usb2.
+00:36:04 INFO  : Setting rebuild state to true for all configurations of project hello_usb2.
+00:36:19 INFO  : Inferring section assignments and sizes from elf file: C:\vc707_bist\vc707_bist.sdk\iic_log\Debug\iic_log.elf
+00:36:28 INFO  : Successfully generated C:\vc707_bist\vc707_bist.sdk\iic_log\src\lscript.ld.
+00:36:28 INFO  : Applying linker script to all configurations of project iic_log.
+00:36:28 INFO  : Setting rebuild state to true for all configurations of project iic_log.
+00:36:32 INFO  : Inferring section assignments and sizes from elf file: C:\vc707_bist\vc707_bist.sdk\lwip_echo_server\Debug\lwip_echo_server.elf
+00:36:58 INFO  : Successfully generated C:\vc707_bist\vc707_bist.sdk\lwip_echo_server\src\lscript.ld.
+00:36:58 INFO  : Applying linker script to all configurations of project lwip_echo_server.
+00:36:58 INFO  : Setting rebuild state to true for all configurations of project lwip_echo_server.
+00:37:08 INFO  : Inferring section assignments and sizes from elf file: C:\vc707_bist\vc707_bist.sdk\iic_log\Debug\iic_log.elf
+00:37:16 INFO  : Successfully generated C:\vc707_bist\vc707_bist.sdk\iic_log\src\lscript.ld.
+00:37:16 INFO  : Applying linker script to all configurations of project iic_log.
+00:37:16 INFO  : Setting rebuild state to true for all configurations of project iic_log.
+00:37:33 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+01:21:29 INFO  : Inferring section assignments and sizes from elf file: C:\vc707_bist\vc707_bist.sdk\bist_app\Debug\bist_app.elf
+01:21:49 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+01:21:51 INFO  : XSDB server has started successfully.
+01:21:55 INFO  : Processor reset is completed for microblaze_0
+01:22:19 INFO  : BSP Project P/standalone_bsp_0 has been successfully migrated.
+01:22:27 INFO  : Refreshed build settings on project bist_app
+01:22:27 INFO  : Refreshed build settings on project hello_usb2
+01:22:27 INFO  : Refreshed build settings on project iic_log
+01:23:03 INFO  : Processor reset is completed for microblaze_0
+01:26:32 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+02:12:30 INFO  : Inferring section assignments and sizes from elf file: C:\vc707_bist\vc707_bist.sdk\lwip_echo_server\Debug\lwip_echo_server.elf
+02:12:37 INFO  : Successfully generated C:\vc707_bist\vc707_bist.sdk\lwip_echo_server\src\lscript.ld.
+02:12:37 INFO  : Applying linker script to all configurations of project lwip_echo_server.
+02:12:37 INFO  : Setting rebuild state to true for all configurations of project lwip_echo_server.
+02:12:46 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+02:12:48 INFO  : XSDB server has started successfully.
+02:12:59 INFO  : Processor reset is completed for microblaze_0
+02:14:27 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

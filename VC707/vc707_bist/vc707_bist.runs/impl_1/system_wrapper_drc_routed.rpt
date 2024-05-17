@@ -1,0 +1,233 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.1 (win64) Build 1215546 Mon Apr 27 19:22:08 MDT 2015
+| Date         : Wed May 06 23:04:54 2015
+| Host         : XCOJAMESM22 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_drc
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 40
+
+2. REPORT DETAILS
+-----------------
+IOSR-1#1 Warning
+IOB set reset sharing  
+IO ulpi_data_io[0] connects to flops which have these system_i/axi_usb2_device_0/U0/ULPI.USB_CORE/CORE_WITHOUT_DMA.IPIC_IF/upar_rgacc_done_en1, system_i/axi_usb2_device_0/U0/CORE_WITHOUT_DMA.IPIC_IF/TEST_MODE_SYNC/ULPI_Data_O_mirror_reg[0][0] set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#2 Warning
+IOB set reset sharing  
+IO ulpi_data_io[1] connects to flops which have these system_i/axi_usb2_device_0/U0/ULPI.USB_CORE/CORE_WITHOUT_DMA.IPIC_IF/upar_rgacc_done_en1, system_i/axi_usb2_device_0/U0/CORE_WITHOUT_DMA.IPIC_IF/TEST_MODE_SYNC/ULPI_Data_O_mirror_reg[0][0] set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#3 Warning
+IOB set reset sharing  
+IO ulpi_data_io[2] connects to flops which have these system_i/axi_usb2_device_0/U0/ULPI.USB_CORE/CORE_WITHOUT_DMA.IPIC_IF/upar_rgacc_done_en1, system_i/axi_usb2_device_0/U0/CORE_WITHOUT_DMA.IPIC_IF/TEST_MODE_SYNC/ULPI_Data_O_mirror_reg[0][0] set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#4 Warning
+IOB set reset sharing  
+IO ulpi_data_io[3] connects to flops which have these system_i/axi_usb2_device_0/U0/ULPI.USB_CORE/CORE_WITHOUT_DMA.IPIC_IF/upar_rgacc_done_en1, system_i/axi_usb2_device_0/U0/CORE_WITHOUT_DMA.IPIC_IF/TEST_MODE_SYNC/ULPI_Data_O_mirror_reg[0][0] set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#5 Warning
+IOB set reset sharing  
+IO ulpi_data_io[4] connects to flops which have these system_i/axi_usb2_device_0/U0/ULPI.USB_CORE/CORE_WITHOUT_DMA.IPIC_IF/upar_rgacc_done_en1, system_i/axi_usb2_device_0/U0/CORE_WITHOUT_DMA.IPIC_IF/TEST_MODE_SYNC/ULPI_Data_O_mirror_reg[0][0] set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#6 Warning
+IOB set reset sharing  
+IO ulpi_data_io[5] connects to flops which have these system_i/axi_usb2_device_0/U0/ULPI.USB_CORE/CORE_WITHOUT_DMA.IPIC_IF/upar_rgacc_done_en1, system_i/axi_usb2_device_0/U0/CORE_WITHOUT_DMA.IPIC_IF/TEST_MODE_SYNC/ULPI_Data_O_mirror_reg[0][0] set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#7 Warning
+IOB set reset sharing  
+IO ulpi_data_io[6] connects to flops which have these system_i/axi_usb2_device_0/U0/ULPI.USB_CORE/CORE_WITHOUT_DMA.IPIC_IF/upar_rgacc_done_en1, system_i/axi_usb2_device_0/U0/CORE_WITHOUT_DMA.IPIC_IF/TEST_MODE_SYNC/ULPI_Data_O_mirror_reg[0][0] set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#8 Warning
+IOB set reset sharing  
+IO ulpi_data_io[7] connects to flops which have these system_i/axi_usb2_device_0/U0/ULPI.USB_CORE/CORE_WITHOUT_DMA.IPIC_IF/upar_rgacc_done_en1, system_i/axi_usb2_device_0/U0/CORE_WITHOUT_DMA.IPIC_IF/TEST_MODE_SYNC/ULPI_Data_O_mirror_reg[0][0] set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/axi_ethernet_0/inst/eth_mac/inst/bd_0_eth_mac_0_core/man_reset.sync_mgmt_reset_host_i/async_rst4_reg in site SLICE_X143Y159 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/axi_ethernet_0/inst/eth_mac/inst/bd_0_eth_mac_0_core/man_reset.sync_mgmt_reset_host_i/sync_rst0_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/axi_ethernet_0/inst/eth_mac/inst/bd_0_eth_mac_0_core/sync_rx_reset_i/async_rst4_reg in site SLICE_X147Y161 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/axi_ethernet_0/inst/eth_mac/inst/bd_0_eth_mac_0_core/sync_rx_reset_i/sync_rst0_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/axi_ethernet_0/inst/eth_mac/inst/bd_0_eth_mac_0_core/sync_tx_reset_i/async_rst4_reg in site SLICE_X146Y161 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/axi_ethernet_0/inst/eth_mac/inst/bd_0_eth_mac_0_core/sync_tx_reset_i/sync_rst0_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.RESET_INT_reg in site SLICE_X180Y146 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_PIPE_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/sgmii_logic/gen_sync_reset/reset_sync5 in site SLICE_X175Y143 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell system_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/sgmii_logic/gen_sync_reset/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync5 in site SLICE_X186Y138 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell system_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync5 in site SLICE_X210Y30 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell system_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync5 in site SLICE_X211Y11 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell system_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/axi_ethernet_0/inst/eth_buf/U0/CLK2AXICLK_ISR_7/data_sync1_i in site SLICE_X176Y148 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/axi_ethernet_0/inst/eth_buf/U0/CLK2AXICLK_ISR_7/data_sync2_i is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/axi_ethernet_0/inst/eth_mac/inst/bd_0_eth_mac_0_core/man_reset.sync_mgmt_reset_host_i/sync_rst0_reg in site SLICE_X143Y160 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell system_i/axi_ethernet_0/inst/eth_mac/inst/bd_0_eth_mac_0_core/man_reset.sync_mgmt_reset_host_i/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/axi_ethernet_0/inst/eth_mac/inst/bd_0_eth_mac_0_core/sync_rx_reset_i/sync_rst0_reg in site SLICE_X147Y162 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell system_i/axi_ethernet_0/inst/eth_mac/inst/bd_0_eth_mac_0_core/sync_rx_reset_i/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/axi_ethernet_0/inst/eth_mac/inst/bd_0_eth_mac_0_core/sync_tx_reset_i/sync_rst0_reg in site SLICE_X146Y162 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell system_i/axi_ethernet_0/inst/eth_mac/inst/bd_0_eth_mac_0_core/sync_tx_reset_i/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#13 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_PIPE_reg in site SLICE_X180Y147 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell system_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/bd_0_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#14 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/sync_block_reset_done/data_sync_reg6 in site SLICE_X176Y147 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/axi_ethernet_0/inst/eth_buf/U0/CLK2AXICLK_ISR_7/data_sync0_i is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#15 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg2 in site SLICE_X212Y41 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/axi_ethernet_0/inst/pcs_pma/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg3 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#16 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/axi_usb2_device_0/U0/CORE_WITHOUT_DMA.IPIC_IF/UPAR_REGACC_DNE_SYNC/GENERATE_LEVEL_ACK_P_S_CDC.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4 in site SLICE_X109Y139 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/axi_usb2_device_0/U0/CORE_WITHOUT_DMA.IPIC_IF/UPAR_REGACC_DNE_SYNC/GENERATE_LEVEL_ACK_P_S_CDC.CROSS_PLEVEL_SCNDRY2PRMRY_p_level_out_d1_cdc_to is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#17 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/axi_usb2_device_0/U0/CORE_WITHOUT_DMA.IPIC_IF/UPAR_REGACC_DNE_SYNC/GENERATE_LEVEL_ACK_P_S_CDC.CROSS_PLEVEL_SCNDRY2PRMRY_p_level_out_d4 in site SLICE_X109Y140 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/axi_usb2_device_0/U0/CORE_WITHOUT_DMA.IPIC_IF/UPAR_REGACC_DNE_SYNC/GENERATE_LEVEL_ACK_P_S_CDC.CROSS_PLEVEL_SCNDRY2PRMRY_p_level_out_d5 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#18 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X159Y270 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#19 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X155Y270 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#20 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X160Y271 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#21 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X158Y270 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#22 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X155Y272 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#23 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X156Y271 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#24 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X154Y272 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#25 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X158Y272 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#26 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X156Y269 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#27 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X157Y271 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#28 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X157Y273 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#29 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X156Y273 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/mig_7series_0/u_system_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PLCK-23#1 Warning
+Clock Placer Checks  
+Sub-optimal placement for a clock-capable IO pin and MMCM pair. 
+Resolution: A dedicated routing path between the two can be used if: (a) The clock-capable IO (CCIO) is placed on a CCIO capable site (b) The MMCM is placed in the same clock region as the CCIO pin. If the IOB is driving multiple MMCMs, all MMCMs must be placed in the same clock region, one clock region above or one clock region below the IOB. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	system_i/mig_7series_0/u_system_mig_7series_0_0_mig/u_ddr3_clk_ibuf/diff_input_clk.u_ibufg_sys_clk (IBUFDS.O) is locked to E19
+	system_i/mig_7series_0/u_system_mig_7series_0_0_mig/u_iodelay_ctrl/clk_ref_mmcm_gen.mmcm_i (MMCME2_ADV.CLKIN1) is provisionally placed by clockplacer on MMCME2_ADV_X0Y6
+
+Related violations: <none>
+
+REQP-1709#1 Warning
+Clock output buffering  
+PLLE2_ADV connectivity violation. The signal system_i/mig_7series_0/u_system_mig_7series_0_0_mig/u_ddr3_infrastructure/pll_clk3_out on the system_i/mig_7series_0/u_system_mig_7series_0_0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3 pin of system_i/mig_7series_0/u_system_mig_7series_0_0_mig/u_ddr3_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+60 net(s) have no routable loads. The problem bus(es) and/or net(s) are system_i/axi_ethernet_0_dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/counter[12], system_i/axi_ethernet_0_dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/data_concat_tlast, system_i/axi_ethernet_0_dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/queue_dout2_new[90:0], system_i/axi_ethernet_0_dma/U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/GEN_QUEUE.FTCH_QUEUE_I/queue_dout_new[90:0], system_i/mig_7series_0/u_system_mig_7series_0_0_mig/u_iodelay_ctrl/rst_ref_sync_r_reg_n_0_[0][14], system_i/axi_ethernet_0_dma/U0/INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR/s2mm_cmnd_data[149:0].
+Related violations: <none>
+
+

@@ -1,0 +1,51 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.05809",
+   "Default View_TopLeft":"-170,-13",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port s_axi -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port sysref_in -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
+preplace port adc2_clk -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port dac0_clk -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace port vin2_01 -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace port vout00 -pg 1 -lvl 5 -x 1210 -y 390 -defaultsOSRD
+preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_irq -pg 1 -lvl 5 -x 1210 -y 450 -defaultsOSRD
+preplace port port-id_clk_adc2 -pg 1 -lvl 5 -x 1210 -y 410 -defaultsOSRD
+preplace port port-id_clk_dac0 -pg 1 -lvl 5 -x 1210 -y 430 -defaultsOSRD
+preplace port port-id_adc2_axis_aclk -pg 1 -lvl 0 -x 0 -y 480 -defaultsOSRD
+preplace port port-id_adc2_axis_aresetn -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace port port-id_dac0_axis_aclk -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port port-id_dac0_axis_aresetn -pg 1 -lvl 0 -x 0 -y 500 -defaultsOSRD
+preplace inst usp_rf_data_converter_0 -pg 1 -lvl 3 -x 800 -y 410 -defaultsOSRD
+preplace inst adc_sink_i -pg 1 -lvl 4 -x 1070 -y 630 -defaultsOSRD
+preplace inst dac_source_i -pg 1 -lvl 2 -x 480 -y 260 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 1 -x 170 -y 80 -defaultsOSRD
+preplace netloc s_axi_aclk_1 1 0 4 30 170 310 130 650 660 NJ
+preplace netloc s_axi_aresetn_1 1 0 4 20 180 330 150 620 680 NJ
+preplace netloc usp_rf_data_converter_0_irq 1 3 2 NJ 450 NJ
+preplace netloc usp_rf_data_converter_0_clk_adc2 1 3 2 NJ 410 NJ
+preplace netloc usp_rf_data_converter_0_clk_dac0 1 3 2 NJ 430 NJ
+preplace netloc adc2_axis_aclk_1 1 0 4 NJ 480 NJ 480 670 580 930
+preplace netloc m2_axis_aresetn_0_1 1 0 3 NJ 460 NJ 460 NJ
+preplace netloc dac0_axis_aclk_1 1 0 3 NJ 240 340 140 660J
+preplace netloc s0_axis_aresetn_0_1 1 0 3 NJ 500 NJ 500 NJ
+preplace netloc sysref_in_1 1 0 3 NJ 400 NJ 400 NJ
+preplace netloc adc2_clk_1 1 0 3 NJ 160 NJ 160 640J
+preplace netloc dac0_clk_1 1 0 3 NJ 360 NJ 360 NJ
+preplace netloc vin2_01_0_1 1 0 3 NJ 380 NJ 380 NJ
+preplace netloc usp_rf_data_converter_0_vout00 1 3 2 NJ 390 NJ
+preplace netloc usp_rf_data_converter_0_m20_axis 1 3 1 940 370n
+preplace netloc dac_source_i_m00 1 2 1 630 260n
+preplace netloc smartconnect_0_M00_AXI 1 1 2 NJ 60 670
+preplace netloc smartconnect_0_M01_AXI 1 1 1 320 80n
+preplace netloc smartconnect_0_M02_AXI 1 1 3 310 120 NJ 120 950J
+preplace netloc s_axi_1 1 0 1 NJ 60
+levelinfo -pg 1 0 170 480 800 1070 1210
+pagesize -pg 1 -db -bbox -sgen -170 0 1320 740
+"
+}
+

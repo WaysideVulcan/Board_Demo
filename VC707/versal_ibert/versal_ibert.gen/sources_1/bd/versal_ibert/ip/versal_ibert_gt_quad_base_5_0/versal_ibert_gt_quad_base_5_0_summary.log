@@ -1,0 +1,20 @@
+ =========================GTREFCLK0 =======================
+ GTREFCLK0 is (R0 of PROT0) a single frequency port
+ Drive 156.25 MHz  on GTREFCLK0
+ 
+ 
+ 
+=========================Table Summary=======================
+  
++---------------+------------------------------+----------+
+| Protocol Info | Parameters                   | CONFIG 0 |
++---------------+------------------------------+----------+
+| Protocol 0    | TX LINE RATE (Gb/s)          | 53.125   |
+| DUPLEX        | TX PLL TYPE                  | LCPLL    |
+| 4 lanes       | TX REF CLK FREQ (MHz)        | 156.25   |
+|               | Actual TX REF CLK FREQ (MHz) | 156.25   |
+|               | RX LINE RATE (Gb/s)          | 53.125   |
+|               | RX PLL TYPE                  | LCPLL    |
+|               | RX REF CLK FREQ (MHz)        | 156.25   |
+|               | Actual RX REF CLK FREQ (MHz) | 156.25   |
++---------------+------------------------------+----------+

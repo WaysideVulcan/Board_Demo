@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon May  6 10:54:41 2024
+# Process ID: 3316
+# Current directory: c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex
+# Command line: vivado.exe -notrace -source c:/Vulcan/Design_Tool/Board_Demo/ZCU208/adda_loopback/.Xil/usp_rf_data_converter_0/usp_rf_data_converter_0_ex.tcl
+# Log file: c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/vivado.log
+# Journal file: c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+start_gui
+source c:/Vulcan/Design_Tool/Board_Demo/ZCU208/adda_loopback/.Xil/usp_rf_data_converter_0/usp_rf_data_converter_0_ex.tcl -notrace
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1

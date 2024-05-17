@@ -1,0 +1,214 @@
+
+*** Running vivado
+    with args -log versal_ibert_urlp_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source versal_ibert_urlp_1_0.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source versal_ibert_urlp_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 583.047 ; gain = 181.832
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: versal_ibert_urlp_1_0
+Command: synth_design -top versal_ibert_urlp_1_0 -part xcvp1202-vsva2785-2MHP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvp1202'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvp1202'
+INFO: [Device 21-403] Loading part xcvp1202-vsva2785-2MHP-e-S
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19296
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 2615.953 ; gain = 425.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'versal_ibert_urlp_1_0' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_urlp_1_0/synth/versal_ibert_urlp_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'util_reduced_logic_v2_0_5_util_reduced_logic' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ipshared/7747/hdl/util_reduced_logic_v2_0_vl_rfs.v:118]
+INFO: [Synth 8-6155] done synthesizing module 'util_reduced_logic_v2_0_5_util_reduced_logic' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ipshared/7747/hdl/util_reduced_logic_v2_0_vl_rfs.v:118]
+INFO: [Synth 8-6155] done synthesizing module 'versal_ibert_urlp_1_0' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_urlp_1_0/synth/versal_ibert_urlp_1_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:23 . Memory (MB): peak = 2728.453 ; gain = 537.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:24 . Memory (MB): peak = 2746.371 ; gain = 555.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:24 . Memory (MB): peak = 2746.371 ; gain = 555.660
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2746.371 ; gain = 0.000
+INFO: [Constraints 18-6336] Loading Clock Expansion Window constraints config file for device xcvp1202.
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvp1202.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2862.934 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 2863.930 ; gain = 0.996
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:41 . Memory (MB): peak = 2863.930 ; gain = 673.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvp1202-vsva2785-2MHP-e-S
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:41 . Memory (MB): peak = 2863.930 ; gain = 673.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:41 . Memory (MB): peak = 2863.930 ; gain = 673.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 2863.930 ; gain = 673.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3984 (col length:166)
+BRAMs: 2682 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3330] design versal_ibert_urlp_1_0 has an empty top module
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:48 . Memory (MB): peak = 2863.930 ; gain = 673.219
+---------------------------------------------------------------------------------
+INFO: [Device 21-8972] Using routethru equations.
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:02:08 . Memory (MB): peak = 4365.199 ; gain = 2174.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:02:08 . Memory (MB): peak = 4365.199 ; gain = 2174.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11322] No global retiming is needed without any clock constraint
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:02:09 . Memory (MB): peak = 4374.766 ; gain = 2184.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:02:18 . Memory (MB): peak = 4390.578 ; gain = 2199.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:02:18 . Memory (MB): peak = 4390.578 ; gain = 2199.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:02:18 . Memory (MB): peak = 4390.578 ; gain = 2199.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:02:18 . Memory (MB): peak = 4390.578 ; gain = 2199.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:02:18 . Memory (MB): peak = 4390.578 ; gain = 2199.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:02:18 . Memory (MB): peak = 4390.578 ; gain = 2199.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:02:18 . Memory (MB): peak = 4390.578 ; gain = 2199.867
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:02:09 . Memory (MB): peak = 4390.578 ; gain = 2082.309
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:02:18 . Memory (MB): peak = 4390.578 ; gain = 2199.867
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4390.578 ; gain = 0.000
+INFO: [Constraints 18-6336] Loading Clock Expansion Window constraints config file for device xcvp1202.
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvp1202.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4478.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: 77942d1e
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:03:26 . Memory (MB): peak = 4478.914 ; gain = 3815.562
+INFO: [Common 17-1381] The checkpoint 'C:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.runs/versal_ibert_urlp_1_0_synth_1/versal_ibert_urlp_1_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.runs/versal_ibert_urlp_1_0_synth_1/versal_ibert_urlp_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file versal_ibert_urlp_1_0_utilization_synth.rpt -pb versal_ibert_urlp_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May  6 17:59:10 2024...

@@ -1,0 +1,190 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date             : Mon May  6 11:11:36 2024
+| Host             : Vulcan running 64-bit major release  (build 9200)
+| Command          : report_power -file usp_rf_data_converter_0_example_design_power_routed.rpt -pb usp_rf_data_converter_0_example_design_power_summary_routed.pb -rpx usp_rf_data_converter_0_example_design_power_routed.rpx
+| Design           : usp_rf_data_converter_0_example_design
+| Device           : xczu48dr-fsvg1517-2-e
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 2.347        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 1.176        |
+| Device Static (W)        | 1.171        |
+| Effective TJA (C/W)      | 0.8          |
+| Max Ambient (C)          | 98.1         |
+| Junction Temperature (C) | 26.9         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.036 |       15 |       --- |             --- |
+| CLB Logic               |     0.011 |    15138 |       --- |             --- |
+|   LUT as Logic          |     0.007 |     6206 |    425280 |            1.46 |
+|   LUT as Shift Register |     0.002 |      193 |    213600 |            0.09 |
+|   Register              |    <0.001 |     6507 |    850560 |            0.77 |
+|   CARRY8                |    <0.001 |       36 |     53160 |            0.07 |
+|   Others                |     0.000 |      615 |       --- |             --- |
+|   F7/F8 Muxes           |     0.000 |      118 |    425280 |            0.03 |
+| Signals                 |     0.020 |    12896 |       --- |             --- |
+| Block RAM               |     0.005 |        8 |      1080 |            0.74 |
+| RFAMS                   |     1.066 |        8 |       --- |             --- |
+|   RFADC                 |     0.578 |        4 |         4 |          100.00 |
+|   RFDAC                 |     0.488 |        4 |         4 |          100.00 |
+| I/O                     |     0.038 |      129 |       347 |           37.18 |
+| Static Power            |     1.171 |          |           |                 |
+| Total                   |     2.347 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint          |       0.850 |     0.370 |       0.085 |      0.285 |       NA    | Unspecified | NA         |
+| Vccint_io       |       0.850 |     0.072 |       0.002 |      0.070 |       NA    | Unspecified | NA         |
+| Vccbram         |       0.850 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
+| Vccaux          |       1.800 |     0.281 |       0.000 |      0.281 |       NA    | Unspecified | NA         |
+| Vccaux_io       |       1.800 |     0.067 |       0.010 |      0.058 |       NA    | Unspecified | NA         |
+| Vcco33          |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco25          |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18          |       1.800 |     0.010 |       0.010 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15          |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135         |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12          |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco10          |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc          |       1.800 |     0.008 |       0.000 |      0.008 |       NA    | Unspecified | NA         |
+| VCC_PSINTFP     |       0.850 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSINTLP     |       0.850 |     0.005 |       0.000 |      0.005 |       NA    | Unspecified | NA         |
+| VPS_MGTRAVCC    |       0.850 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSINTFP_DDR |       0.850 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSPLL       |       1.200 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| VPS_MGTRAVTT    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSDDR_504  |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSAUX       |       1.800 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| VCC_PSBATT      |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSDDR_PLL   |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO0_500  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO1_501  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO2_502  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO3_503  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSADC       |       1.800 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| VCCINT_AMS      |       0.850 |     0.201 |       0.178 |      0.023 |       NA    | Unspecified | NA         |
+| DACAVCC         |       0.925 |     0.236 |       0.227 |      0.009 |       NA    | Unspecified | NA         |
+| DACAVCCAUX      |       1.800 |     0.061 |       0.060 |      0.001 |       NA    | Unspecified | NA         |
+| DACAVTT         |       2.500 |     0.054 |       0.044 |      0.010 |       NA    | Unspecified | NA         |
+| ADCAVCC         |       0.925 |     0.296 |       0.185 |      0.111 |       NA    | Unspecified | NA         |
+| ADCAVCCAUX      |       1.800 |     0.203 |       0.176 |      0.027 |       NA    | Unspecified | NA         |
+| VCCSDFEC        |       0.850 |     0.027 |       0.000 |      0.027 |       NA    | Unspecified | NA         |
+| MGTYAVcc        |       0.900 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTYAVtt        |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTYVccaux      |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
++-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 0.8                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 1.2                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++--------------------------------------+----------------+-----------------+
+| Clock                                | Domain         | Constraint (ns) |
++--------------------------------------+----------------+-----------------+
+| usp_rf_data_converter_0_adc2_clk     | adc2_clk_p     |             4.0 |
+| usp_rf_data_converter_0_axi_aclk     | s_axi_aclk     |            10.0 |
+| usp_rf_data_converter_0_dac0_clk     | dac0_clk_p     |             2.5 |
+| usp_rf_data_converter_0_m2_axis_aclk | adc2_axis_aclk |             4.0 |
+| usp_rf_data_converter_0_s0_axis_aclk | dac0_axis_aclk |             2.5 |
++--------------------------------------+----------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++----------------------------------------+-----------+
+| Name                                   | Power (W) |
++----------------------------------------+-----------+
+| usp_rf_data_converter_0_example_design |     1.176 |
+|   usp_rf_data_converter_0_ex_i         |     1.138 |
+|     adc_sink_i                         |     0.011 |
+|       inst                             |     0.011 |
+|     dac_source_i                       |     0.017 |
+|       inst                             |     0.017 |
+|     smartconnect_0                     |     0.004 |
+|       inst                             |     0.004 |
+|     usp_rf_data_converter_0            |     1.106 |
+|       inst                             |     1.106 |
++----------------------------------------+-----------+
+
+

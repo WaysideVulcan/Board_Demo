@@ -1,0 +1,740 @@
+
+*** Running vivado
+    with args -log versal_ibert_gt_quad_base_2_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source versal_ibert_gt_quad_base_2_0.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source versal_ibert_gt_quad_base_2_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:45 . Memory (MB): peak = 583.176 ; gain = 182.676
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: versal_ibert_gt_quad_base_2_0
+Command: synth_design -top versal_ibert_gt_quad_base_2_0 -part xcvp1202-vsva2785-2MHP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvp1202'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvp1202'
+INFO: [Device 21-403] Loading part xcvp1202-vsva2785-2MHP-e-S
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18376
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2620.895 ; gain = 428.203
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'apb3_pen_int', assumed default net type 'wire' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:1351]
+INFO: [Synth 8-6157] synthesizing module 'versal_ibert_gt_quad_base_2_0' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'versal_ibert_gt_quad_base_2_0_inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:52]
+INFO: [Synth 8-6157] synthesizing module 'versal_ibert_gt_quad_base_2_0_tx_function' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_tx_function.v:51]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'versal_ibert_gt_quad_base_2_0_tx_function' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_tx_function.v:51]
+INFO: [Synth 8-6157] synthesizing module 'versal_ibert_gt_quad_base_2_0_rx_function' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_rx_function.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'versal_ibert_gt_quad_base_2_0_rx_function' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_rx_function.v:51]
+INFO: [Synth 8-6157] synthesizing module 'GTYP_QUAD' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:57957]
+INFO: [Synth 8-6155] done synthesizing module 'GTYP_QUAD' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:57957]
+INFO: [Synth 8-6157] synthesizing module 'versal_ibert_gt_quad_base_2_0_gtyp_rstdone' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:3507]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+WARNING: [Synth 8-7071] port 'src_clk' of module 'xpm_cdc_single' is unconnected for instance 'u_rstdone_sync' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:3522]
+WARNING: [Synth 8-7023] instance 'u_rstdone_sync' of module 'xpm_cdc_single' has 4 connections declared, but only 3 given [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:3522]
+INFO: [Synth 8-6155] done synthesizing module 'versal_ibert_gt_quad_base_2_0_gtyp_rstdone' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:3507]
+INFO: [Synth 8-6155] done synthesizing module 'versal_ibert_gt_quad_base_2_0_inst' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:52]
+WARNING: [Synth 8-7071] port 's_axi_lite_arready' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_rdata' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_rvalid' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_awready' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_wready' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_rresp' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_bresp' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_bvalid' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllrsvdout' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllrsvdout' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllrsvdout' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllrsvdout' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'altclk' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_clk' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_resetn' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_araddr' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_arvalid' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_rready' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_awaddr' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_awvalid' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_wdata' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_wvalid' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 's_axi_lite_bready' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllclkrsvd0' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllclkrsvd1' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllgtgrefclk' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllrsvd0' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllrsvd1' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllclkrsvd0' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllclkrsvd1' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllgtgrefclk' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllrsvd0' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllrsvd1' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllclkrsvd0' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllclkrsvd1' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllgtgrefclk' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllrsvd0' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllrsvd1' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllclkrsvd0' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllclkrsvd1' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllgtgrefclk' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllrsvd0' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllrsvd1' of module 'versal_ibert_gt_quad_base_2_0_inst' is unconnected for instance 'inst' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+WARNING: [Synth 8-7023] instance 'inst' of module 'versal_ibert_gt_quad_base_2_0_inst' has 1034 connections declared, but only 991 given [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:3243]
+INFO: [Synth 8-6155] done synthesizing module 'versal_ibert_gt_quad_base_2_0' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0.v:53]
+WARNING: [Synth 8-3848] Net s_axi_lite_arready in module/entity versal_ibert_gt_quad_base_2_0_inst does not have driver. [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:97]
+WARNING: [Synth 8-3848] Net s_axi_lite_rdata in module/entity versal_ibert_gt_quad_base_2_0_inst does not have driver. [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:98]
+WARNING: [Synth 8-3848] Net s_axi_lite_rvalid in module/entity versal_ibert_gt_quad_base_2_0_inst does not have driver. [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:99]
+WARNING: [Synth 8-3848] Net s_axi_lite_awready in module/entity versal_ibert_gt_quad_base_2_0_inst does not have driver. [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:100]
+WARNING: [Synth 8-3848] Net s_axi_lite_wready in module/entity versal_ibert_gt_quad_base_2_0_inst does not have driver. [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:101]
+WARNING: [Synth 8-3848] Net s_axi_lite_rresp in module/entity versal_ibert_gt_quad_base_2_0_inst does not have driver. [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:102]
+WARNING: [Synth 8-3848] Net s_axi_lite_bresp in module/entity versal_ibert_gt_quad_base_2_0_inst does not have driver. [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:103]
+WARNING: [Synth 8-3848] Net s_axi_lite_bvalid in module/entity versal_ibert_gt_quad_base_2_0_inst does not have driver. [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:104]
+WARNING: [Synth 8-3848] Net hsclk0_lcpllrsvdout in module/entity versal_ibert_gt_quad_base_2_0_inst does not have driver. [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:487]
+WARNING: [Synth 8-3848] Net hsclk0_rpllrsvdout in module/entity versal_ibert_gt_quad_base_2_0_inst does not have driver. [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:492]
+WARNING: [Synth 8-3848] Net hsclk1_lcpllrsvdout in module/entity versal_ibert_gt_quad_base_2_0_inst does not have driver. [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:500]
+WARNING: [Synth 8-3848] Net hsclk1_rpllrsvdout in module/entity versal_ibert_gt_quad_base_2_0_inst does not have driver. [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0_inst.v:505]
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_arready in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[31] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[30] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[29] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[28] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[27] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[26] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[25] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[24] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[23] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[22] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[21] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[20] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[19] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[18] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[17] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[16] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[15] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[14] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[13] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[12] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[11] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[10] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[9] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[8] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[7] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[6] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[5] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[4] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[3] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[2] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[1] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rdata[0] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rvalid in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_awready in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_wready in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rresp[1] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rresp[0] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_bresp[1] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_bresp[0] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_bvalid in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_lcpllrsvdout[7] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_lcpllrsvdout[6] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_lcpllrsvdout[5] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_lcpllrsvdout[4] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_lcpllrsvdout[3] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_lcpllrsvdout[2] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_lcpllrsvdout[1] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_lcpllrsvdout[0] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_rpllrsvdout[7] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_rpllrsvdout[6] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_rpllrsvdout[5] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_rpllrsvdout[4] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_rpllrsvdout[3] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_rpllrsvdout[2] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_rpllrsvdout[1] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk0_rpllrsvdout[0] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_lcpllrsvdout[7] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_lcpllrsvdout[6] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_lcpllrsvdout[5] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_lcpllrsvdout[4] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_lcpllrsvdout[3] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_lcpllrsvdout[2] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_lcpllrsvdout[1] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_lcpllrsvdout[0] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_rpllrsvdout[7] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_rpllrsvdout[6] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_rpllrsvdout[5] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_rpllrsvdout[4] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_rpllrsvdout[3] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_rpllrsvdout[2] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_rpllrsvdout[1] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hsclk1_rpllrsvdout[0] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port altclk in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_clk in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_resetn in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[17] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[16] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[15] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[14] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[13] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[12] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[11] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[10] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[9] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[8] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[7] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[6] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[5] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[4] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[3] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[2] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[1] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_araddr[0] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_arvalid in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_rready in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_awaddr[17] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_awaddr[16] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_lite_awaddr[15] in module versal_ibert_gt_quad_base_2_0_inst is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 2753.961 ; gain = 561.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 2771.895 ; gain = 579.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 2771.895 ; gain = 579.203
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 2783.910 ; gain = 0.000
+INFO: [Constraints 18-6336] Loading Clock Expansion Window constraints config file for device xcvp1202.
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvp1202.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 3040.906 ; gain = 70.031
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/synth/versal_ibert_gt_quad_base_2_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_2_0/versal_ibert_gt_quad_base_2_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/versal_ibert_gt_quad_base_2_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/versal_ibert_gt_quad_base_2_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.runs/versal_ibert_gt_quad_base_2_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.runs/versal_ibert_gt_quad_base_2_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/versal_ibert_gt_quad_base_2_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/versal_ibert_gt_quad_base_2_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 140 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3041.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 3042.836 ; gain = 0.984
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:01:04 . Memory (MB): peak = 3042.836 ; gain = 850.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvp1202-vsva2785-2MHP-e-S
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:01:04 . Memory (MB): peak = 3042.836 ; gain = 850.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.runs/versal_ibert_gt_quad_base_2_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch0_txpmaresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch1_txpmaresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch2_txpmaresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch3_txpmaresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch0_rxpmaresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch1_rxpmaresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch2_rxpmaresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch3_rxpmaresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch0_txresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch1_txresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch2_txresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch3_txresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch0_rxresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch1_rxresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch2_rxresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch3_rxresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch0_msttxresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch1_msttxresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch2_msttxresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch3_msttxresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch0_mstrxresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch1_mstrxresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch2_mstrxresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch3_mstrxresetdone/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch0_10_pcsrsvdout/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch1_10_pcsrsvdout/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch2_10_pcsrsvdout/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch3_10_pcsrsvdout/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch0_11_pcsrsvdout/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch1_11_pcsrsvdout/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch2_11_pcsrsvdout/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_ch3_11_pcsrsvdout/u_rstdone_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_rx_function_inst/MSTRXRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_rx_function_inst/MSTRXRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_rx_function_inst/MSTRXRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_rx_function_inst/MSTRXRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/MSTTXRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/MSTTXRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/MSTTXRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/MSTTXRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_rx_function_inst/RXDATAPATHRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_rx_function_inst/RXDATAPATHRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_rx_function_inst/RXDATAPATHRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_rx_function_inst/RXDATAPATHRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/TXDATAPATHRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/TXDATAPATHRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/TXDATAPATHRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/TXDATAPATHRESET_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/TXLANEDESKEW_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/TXLANEDESKEW_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/TXLANEDESKEW_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/TXLANEDESKEW_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_rx_function_inst/\synch_vec_rxrate[0].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_rx_function_inst/\synch_vec_rxrate[0].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_rx_function_inst/\synch_vec_rxrate[0].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_rx_function_inst/\synch_vec_rxrate[0].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_rx_function_inst/\synch_vec_rxrate[1].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_rx_function_inst/\synch_vec_rxrate[1].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_rx_function_inst/\synch_vec_rxrate[1].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_rx_function_inst/\synch_vec_rxrate[1].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_rx_function_inst/\synch_vec_rxrate[2].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_rx_function_inst/\synch_vec_rxrate[2].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_rx_function_inst/\synch_vec_rxrate[2].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_rx_function_inst/\synch_vec_rxrate[2].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_rx_function_inst/\synch_vec_rxrate[3].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_rx_function_inst/\synch_vec_rxrate[3].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_rx_function_inst/\synch_vec_rxrate[3].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_rx_function_inst/\synch_vec_rxrate[3].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_rx_function_inst/\synch_vec_rxrate[4].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_rx_function_inst/\synch_vec_rxrate[4].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_rx_function_inst/\synch_vec_rxrate[4].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_rx_function_inst/\synch_vec_rxrate[4].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_rx_function_inst/\synch_vec_rxrate[5].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_rx_function_inst/\synch_vec_rxrate[5].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_rx_function_inst/\synch_vec_rxrate[5].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_rx_function_inst/\synch_vec_rxrate[5].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_rx_function_inst/\synch_vec_rxrate[6].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_rx_function_inst/\synch_vec_rxrate[6].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_rx_function_inst/\synch_vec_rxrate[6].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_rx_function_inst/\synch_vec_rxrate[6].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_rx_function_inst/\synch_vec_rxrate[7].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_rx_function_inst/\synch_vec_rxrate[7].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_rx_function_inst/\synch_vec_rxrate[7].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_rx_function_inst/\synch_vec_rxrate[7].RXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/\synch_vec_txprbssel[0].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/\synch_vec_txprbssel[0].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/\synch_vec_txprbssel[0].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/\synch_vec_txprbssel[0].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/\synch_vec_txprbssel[1].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/\synch_vec_txprbssel[1].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/\synch_vec_txprbssel[1].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/\synch_vec_txprbssel[1].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/\synch_vec_txprbssel[2].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/\synch_vec_txprbssel[2].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/\synch_vec_txprbssel[2].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/\synch_vec_txprbssel[2].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/\synch_vec_txprbssel[3].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/\synch_vec_txprbssel[3].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/\synch_vec_txprbssel[3].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/\synch_vec_txprbssel[3].TXPRBS_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/\synch_vec_txrate[0].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/\synch_vec_txrate[0].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/\synch_vec_txrate[0].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/\synch_vec_txrate[0].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/\synch_vec_txrate[1].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/\synch_vec_txrate[1].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/\synch_vec_txrate[1].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/\synch_vec_txrate[1].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/\synch_vec_txrate[2].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/\synch_vec_txrate[2].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/\synch_vec_txrate[2].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/\synch_vec_txrate[2].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/\synch_vec_txrate[3].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/\synch_vec_txrate[3].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/\synch_vec_txrate[3].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/\synch_vec_txrate[3].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/\synch_vec_txrate[4].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/\synch_vec_txrate[4].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/\synch_vec_txrate[4].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/\synch_vec_txrate[4].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/\synch_vec_txrate[5].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/\synch_vec_txrate[5].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/\synch_vec_txrate[5].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/\synch_vec_txrate[5].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/\synch_vec_txrate[6].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/\synch_vec_txrate[6].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/\synch_vec_txrate[6].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/\synch_vec_txrate[6].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/\synch_vec_txrate[7].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/\synch_vec_txrate[7].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/\synch_vec_txrate[7].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/\synch_vec_txrate[7].TXRATE_xpm_internal_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_rx_function_inst/RXPRERATECHANGE_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_rx_function_inst/RXPRERATECHANGE_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_rx_function_inst/RXPRERATECHANGE_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_rx_function_inst/RXPRERATECHANGE_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch0_tx_function_inst/TXPRERATECHANGE_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch1_tx_function_inst/TXPRERATECHANGE_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch2_tx_function_inst/TXPRERATECHANGE_xpm_internal_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ch3_tx_function_inst/TXPRERATECHANGE_xpm_internal_sync. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:01:05 . Memory (MB): peak = 3042.836 ; gain = 850.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'gpoState_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'txrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'txprbs_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'gpoState_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'txrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'txprbs_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'gpoState_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'txrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'txprbs_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function'
+INFO: [Synth 8-802] inferred FSM for state register 'gpoState_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function'
+INFO: [Synth 8-802] inferred FSM for state register 'txrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function'
+INFO: [Synth 8-802] inferred FSM for state register 'txprbs_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function'
+INFO: [Synth 8-802] inferred FSM for state register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'gpoState_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'rxrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'gpoState_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'rxrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'gpoState_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'rxrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function'
+INFO: [Synth 8-802] inferred FSM for state register 'gpoState_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function'
+INFO: [Synth 8-802] inferred FSM for state register 'rxrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            TXPRBS_START |                               01 |                               01
+           TXPRBS_STATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'txprbs_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            TXRATE_START |                            00001 |                            00001
+           TXRATE_STATE1 |                            00010 |                            00010
+           TXRATE_STATE2 |                            00100 |                            00100
+           TXRATE_STATE3 |                            01000 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'txrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               ARB_START |                            00001 |                            00001
+                ARB_WAIT |                            00010 |                            00010
+              ARB_REPORT |                            00100 |                            00100
+        ARB_WAIT_NXT_REQ |                            01000 |                            01000
+                 ARB_INC |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                               00
+                 iSTATE0 |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gpoState_reg' using encoding 'sequential' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            TXPRBS_START |                               01 |                               01
+           TXPRBS_STATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'txprbs_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            TXRATE_START |                            00001 |                            00001
+           TXRATE_STATE1 |                            00010 |                            00010
+           TXRATE_STATE2 |                            00100 |                            00100
+           TXRATE_STATE3 |                            01000 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'txrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               ARB_START |                            00001 |                            00001
+                ARB_WAIT |                            00010 |                            00010
+              ARB_REPORT |                            00100 |                            00100
+        ARB_WAIT_NXT_REQ |                            01000 |                            01000
+                 ARB_INC |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                               00
+                 iSTATE0 |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gpoState_reg' using encoding 'sequential' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            TXPRBS_START |                               01 |                               01
+           TXPRBS_STATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'txprbs_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            TXRATE_START |                            00001 |                            00001
+           TXRATE_STATE1 |                            00010 |                            00010
+           TXRATE_STATE2 |                            00100 |                            00100
+           TXRATE_STATE3 |                            01000 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'txrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               ARB_START |                            00001 |                            00001
+                ARB_WAIT |                            00010 |                            00010
+              ARB_REPORT |                            00100 |                            00100
+        ARB_WAIT_NXT_REQ |                            01000 |                            01000
+                 ARB_INC |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                               00
+                 iSTATE0 |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gpoState_reg' using encoding 'sequential' in module 'versal_ibert_gt_quad_base_2_0_tx_function__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            TXPRBS_START |                               01 |                               01
+           TXPRBS_STATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'txprbs_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            TXRATE_START |                            00001 |                            00001
+           TXRATE_STATE1 |                            00010 |                            00010
+           TXRATE_STATE2 |                            00100 |                            00100
+           TXRATE_STATE3 |                            01000 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'txrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               ARB_START |                            00001 |                            00001
+                ARB_WAIT |                            00010 |                            00010
+              ARB_REPORT |                            00100 |                            00100
+        ARB_WAIT_NXT_REQ |                            01000 |                            01000
+                 ARB_INC |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_tx_function'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                               00
+                 iSTATE0 |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gpoState_reg' using encoding 'sequential' in module 'versal_ibert_gt_quad_base_2_0_tx_function'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            RXRATE_START |                            00001 |                            00001
+           RXRATE_STATE1 |                            00010 |                            00010
+           RXRATE_STATE2 |                            00100 |                            00100
+           RXRATE_STATE3 |                            01000 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'rxrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               ARB_START |                            00001 |                            00001
+                ARB_WAIT |                            00010 |                            00010
+              ARB_REPORT |                            00100 |                            00100
+        ARB_WAIT_NXT_REQ |                            01000 |                            01000
+                 ARB_INC |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                               00
+                 iSTATE0 |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gpoState_reg' using encoding 'sequential' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            RXRATE_START |                            00001 |                            00001
+           RXRATE_STATE1 |                            00010 |                            00010
+           RXRATE_STATE2 |                            00100 |                            00100
+           RXRATE_STATE3 |                            01000 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'rxrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               ARB_START |                            00001 |                            00001
+                ARB_WAIT |                            00010 |                            00010
+              ARB_REPORT |                            00100 |                            00100
+        ARB_WAIT_NXT_REQ |                            01000 |                            01000
+                 ARB_INC |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                               00
+                 iSTATE0 |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gpoState_reg' using encoding 'sequential' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            RXRATE_START |                            00001 |                            00001
+           RXRATE_STATE1 |                            00010 |                            00010
+           RXRATE_STATE2 |                            00100 |                            00100
+           RXRATE_STATE3 |                            01000 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'rxrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               ARB_START |                            00001 |                            00001
+                ARB_WAIT |                            00010 |                            00010
+              ARB_REPORT |                            00100 |                            00100
+        ARB_WAIT_NXT_REQ |                            01000 |                            01000
+                 ARB_INC |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                               00
+                 iSTATE0 |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gpoState_reg' using encoding 'sequential' in module 'versal_ibert_gt_quad_base_2_0_rx_function__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            RXRATE_START |                            00001 |                            00001
+           RXRATE_STATE1 |                            00010 |                            00010
+           RXRATE_STATE2 |                            00100 |                            00100
+           RXRATE_STATE3 |                            01000 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'rxrate_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               ARB_START |                            00001 |                            00001
+                ARB_WAIT |                            00010 |                            00010
+              ARB_REPORT |                            00100 |                            00100
+        ARB_WAIT_NXT_REQ |                            01000 |                            01000
+                 ARB_INC |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'arb_state_reg' in module 'versal_ibert_gt_quad_base_2_0_rx_function'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                               00
+                 iSTATE0 |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gpoState_reg' using encoding 'sequential' in module 'versal_ibert_gt_quad_base_2_0_rx_function'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:01:08 . Memory (MB): peak = 3042.836 ; gain = 850.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 8     
+	   2 Input    4 Bit       Adders := 16    
+	   2 Input    3 Bit       Adders := 4     
++---Registers : 
+	               11 Bit    Registers := 4     
+	                8 Bit    Registers := 28    
+	                4 Bit    Registers := 52    
+	                3 Bit    Registers := 148   
+	                2 Bit    Registers := 77    
+	                1 Bit    Registers := 258   
++---Muxes : 
+	   6 Input    8 Bit        Muxes := 8     
+	   6 Input    5 Bit        Muxes := 8     
+	   2 Input    5 Bit        Muxes := 8     
+	   2 Input    4 Bit        Muxes := 56    
+	   3 Input    4 Bit        Muxes := 4     
+	   5 Input    4 Bit        Muxes := 16    
+	   2 Input    3 Bit        Muxes := 28    
+	   3 Input    2 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 164   
+	   4 Input    2 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 8     
+	   5 Input    1 Bit        Muxes := 16    
+	   2 Input    1 Bit        Muxes := 184   
+	   6 Input    1 Bit        Muxes := 40    
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3984 (col length:166)
+BRAMs: 2682 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+TclStackFree: incorrect freePtr. Call out of sequence?

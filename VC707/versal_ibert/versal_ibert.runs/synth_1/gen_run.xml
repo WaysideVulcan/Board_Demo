@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcvp1202-vsva2785-2MHP-e-S" LaunchTime="1714988790">
+  <File Type="PA-TCL" Name="versal_ibert_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="versal_ibert_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="versal_ibert_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="versal_ibert_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="versal_ibert_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="versal_ibert_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="versal_ibert_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="versal_ibert_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="versal_ibert_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/versal_ibert/versal_ibert.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/versal_ibert/hdl/versal_ibert_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="versal_ibert_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Vivado/versal_ibert.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/Orthr/AppData/Roaming/Xilinx/Vivado/versal_ibert.xdc"/>
+        <Attr Name="ImportTime" Val="1714988122"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_urlp_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bridge_refclkGTM_REFCLK_X0Y6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_urlp_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_util_ds_buf_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_gt_quad_base_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_13_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_gt_quad_base_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_gt_quad_base_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_util_ds_buf_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_gt_quad_base_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_util_ds_buf_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_14_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_urlp_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_util_ds_buf_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_9_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_12_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_util_ds_buf_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_gt_quad_base_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_15_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_util_ds_buf_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_gt_quad_base_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bridge_refclkGTM_REFCLK_X0Y8_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bridge_refclkGTYP_REFCLK_X1Y0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_gt_quad_base_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bridge_refclkGTYP_REFCLK_X0Y12_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_util_ds_buf_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_urlp_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_util_ds_buf_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_gt_quad_base_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bridge_refclkGTYP_REFCLK_X1Y2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_11_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_8_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bridge_refclkGTM_REFCLK_X0Y2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_urlp_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_urlp_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bufg_gt_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bridge_refclkGTM_REFCLK_X0Y0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_urlp_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_bridge_refclkGTM_REFCLK_X0Y4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="versal_ibert_urlp_5_0"/>
+</GenRun>

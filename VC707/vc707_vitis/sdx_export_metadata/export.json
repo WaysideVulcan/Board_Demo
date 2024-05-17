@@ -1,0 +1,29 @@
+{
+  "version": "2021.1",
+  "applications": [],
+  "platforms": [
+    {
+      "name": "VC707_HDMI"
+    }
+  ],
+  "systems": [
+    {
+      "name": "VC707_HDMI_Out_system",
+      "platform": "C:/Users/User/Desktop/AXI_Vitis_211/VC707_HDMI/export/VC707_HDMI/VC707_HDMI.xpfm",
+      "sysConfig": "VC707_HDMI",
+      "buildConfig": "Debug",
+      "applications": [
+        {
+          "name": "VC707_HDMI_Out",
+          "platform": "C:/Users/User/Desktop/AXI_Vitis_211/VC707_HDMI/export/VC707_HDMI/VC707_HDMI.xpfm",
+          "platformPath": "C:\\Users\\User\\Desktop\\AXI_Vitis_211\\VC707_HDMI\\export\\VC707_HDMI",
+          "sysConfig": "VC707_HDMI",
+          "domain": "standalone_domain",
+          "system": "VC707_HDMI_Out_system"
+        }
+      ],
+      "platformPath": "C:\\Users\\User\\Desktop\\AXI_Vitis_211\\VC707_HDMI\\export\\VC707_HDMI"
+    }
+  ],
+  "others": []
+}

@@ -1,0 +1,224 @@
+
+
+================================================================
+== Vitis HLS Report for 'AXIvideo2MultiPixStream'
+================================================================
+* Date:           Mon May  6 14:33:45 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: virtex7
+* Target device:  xc7vx485t-ffg1761-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.74 ns|  4.782 ns|     1.82 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+---------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |    Interval    | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |   max   |   Type  |
+    +---------+---------+-----------+-----------+------+---------+---------+
+    |     4678|  8313846|  31.516 us|  56.010 ms|  4678|  8313846|       no|
+    +---------+---------+-----------+-----------+------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+---------+---------+-----------+-----------+-----------+-----------+----------+
+        |               |  Latency (cycles) | Iteration |  Initiation Interval  |    Trip   |          |
+        |   Loop Name   |   min   |   max   |  Latency  |  achieved |   target  |   Count   | Pipelined|
+        +---------------+---------+---------+-----------+-----------+-----------+-----------+----------+
+        |- loop_height  |     4672|  8313840|  73 ~ 3849|          -|          -|  64 ~ 2160|        no|
+        +---------------+---------+---------+-----------+-----------+-----------+-----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 9
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 5 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.78>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%axi_data_13 = alloca i32 1" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:516]   --->   Operation 10 'alloca' 'axi_data_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:541]   --->   Operation 11 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (2.39ns)   --->   "%p_read_3 = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %p_read2"   --->   Operation 12 'read' 'p_read_3' <Predicate = true> <Delay = 2.39> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 13 [1/1] (2.39ns)   --->   "%p_read_4 = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %p_read1"   --->   Operation 13 'read' 'p_read_4' <Predicate = true> <Delay = 2.39> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 14 [1/1] (2.39ns)   --->   "%p_read_5 = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %p_read"   --->   Operation 14 'read' 'p_read_5' <Predicate = true> <Delay = 2.39> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%axi_data_14_loc = alloca i64 1"   --->   Operation 15 'alloca' 'axi_data_14_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%eol_loc = alloca i64 1"   --->   Operation 16 'alloca' 'eol_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%axi_last_loc = alloca i64 1"   --->   Operation 17 'alloca' 'axi_last_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (2.39ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_fifo.i12P0A, i12 %HwReg_height_c13, i12 %p_read_5"   --->   Operation 18 'write' 'write_ln0' <Predicate = true> <Delay = 2.39> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 2> <FIFO>
+ST_1 : Operation 19 [1/1] (2.39ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_fifo.i12P0A, i12 %HwReg_width_c11, i12 %p_read_4"   --->   Operation 19 'write' 'write_ln0' <Predicate = true> <Delay = 2.39> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 12> <Depth = 2> <FIFO>
+ST_1 : Operation 20 [1/1] (1.35ns)   --->   "%cond = icmp_eq  i8 %p_read_3, i8 0"   --->   Operation 20 'icmp' 'cond' <Predicate = true> <Delay = 1.35> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.35> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.84ns)   --->   "%store_ln541 = store i12 0, i12 %i" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:541]   --->   Operation 21 'store' 'store_ln541' <Predicate = true> <Delay = 0.84>
+
+State 2 <SV = 1> <Delay = 1.84>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 22 'wait' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [2/2] (1.84ns)   --->   "%call_ln0 = call void @AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start, i40 %s_axis_video_V_data_V, i5 %s_axis_video_V_keep_V, i5 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i36 %axi_data_13, i1 %axi_last_loc"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 1.84> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.84>
+ST_3 : Operation 24 [2/2] (0.00ns)   --->   "%rows = call i12 @reg<unsigned short>, i12 %p_read_5" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:520]   --->   Operation 24 'call' 'rows' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 25 [2/2] (0.00ns)   --->   "%cols = call i12 @reg<unsigned short>, i12 %p_read_4" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:521]   --->   Operation 25 'call' 'cols' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 26 [1/2] (0.84ns)   --->   "%call_ln0 = call void @AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start, i40 %s_axis_video_V_data_V, i5 %s_axis_video_V_keep_V, i5 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i36 %axi_data_13, i1 %axi_last_loc"   --->   Operation 26 'call' 'call_ln0' <Predicate = true> <Delay = 0.84> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.84>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %HwReg_height_c13, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i12 %HwReg_width_c11, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i40 %s_axis_video_V_data_V, i5 %s_axis_video_V_keep_V, i5 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_32"   --->   Operation 29 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i36 %stream_in, void @empty_30, i32 0, i32 0, void @empty_43, i32 0, i32 0, void @empty_43, void @empty_43, void @empty_43, i32 0, i32 0, i32 0, i32 0, void @empty_43, void @empty_43, i32 4294967295, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_dest_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_user_V, i5 %s_axis_video_V_strb_V, i5 %s_axis_video_V_keep_V, i40 %s_axis_video_V_data_V, void @empty_36, i32 1, i32 1, void @empty_42, i32 0, i32 0, void @empty_43, void @empty_43, void @empty_43, i32 0, i32 0, i32 0, i32 0, void @empty_43, void @empty_43, i32 4294967295, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/2] (0.00ns)   --->   "%rows = call i12 @reg<unsigned short>, i12 %p_read_5" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:520]   --->   Operation 32 'call' 'rows' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 33 [1/2] (0.00ns)   --->   "%cols = call i12 @reg<unsigned short>, i12 %p_read_4" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:521]   --->   Operation 33 'call' 'cols' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%axi_last_loc_load = load i1 %axi_last_loc"   --->   Operation 34 'load' 'axi_last_loc_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%empty_94 = wait i32 @_ssdm_op_Wait"   --->   Operation 35 'wait' 'empty_94' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.84ns)   --->   "%br_ln541 = br void %loop_width" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:541]   --->   Operation 36 'br' 'br_ln541' <Predicate = true> <Delay = 0.84>
+
+State 5 <SV = 4> <Delay = 4.51>
+ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%sof = phi i1 1, void %entry, i1 0, void %loop_width.split"   --->   Operation 37 'phi' 'sof' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 38 [1/1] (0.00ns)   --->   "%axi_last_2 = phi i1 %axi_last_loc_load, void %entry, i1 1, void %loop_width.split"   --->   Operation 38 'phi' 'axi_last_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%i_3 = load i12 %i" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:541]   --->   Operation 39 'load' 'i_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 40 [1/1] (1.33ns)   --->   "%icmp_ln541 = icmp_eq  i12 %i_3, i12 %rows" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:541]   --->   Operation 40 'icmp' 'icmp_ln541' <Predicate = true> <Delay = 1.33> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.33> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 64, i64 2160, i64 0"   --->   Operation 41 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 42 [1/1] (1.33ns)   --->   "%i_4 = add i12 %i_3, i12 1" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:541]   --->   Operation 42 'add' 'i_4' <Predicate = true> <Delay = 1.33> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.33> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln541 = br i1 %icmp_ln541, void %loop_width.split, void %for.end75.loopexit" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:541]   --->   Operation 43 'br' 'br_ln541' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%axi_data_13_load = load i36 %axi_data_13"   --->   Operation 44 'load' 'axi_data_13_load' <Predicate = (!icmp_ln541)> <Delay = 0.00>
+ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%empty_95 = wait i32 @_ssdm_op_Wait"   --->   Operation 45 'wait' 'empty_95' <Predicate = (!icmp_ln541)> <Delay = 0.00>
+ST_5 : Operation 46 [2/2] (3.17ns)   --->   "%call_ln521 = call void @AXIvideo2MultiPixStream_Pipeline_loop_width, i1 %sof, i1 %axi_last_2, i36 %axi_data_13_load, i12 %cols, i1 %cond, i36 %stream_in, i40 %s_axis_video_V_data_V, i5 %s_axis_video_V_keep_V, i5 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i1 %eol_loc, i36 %axi_data_14_loc" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:521]   --->   Operation 46 'call' 'call_ln521' <Predicate = (!icmp_ln541)> <Delay = 3.17> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 47 [1/1] (0.84ns)   --->   "%store_ln541 = store i12 %i_4, i12 %i" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:541]   --->   Operation 47 'store' 'store_ln541' <Predicate = (!icmp_ln541)> <Delay = 0.84>
+ST_5 : Operation 48 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 48 'ret' 'ret_ln0' <Predicate = (icmp_ln541)> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 2.17>
+ST_6 : Operation 49 [1/2] (2.17ns)   --->   "%call_ln521 = call void @AXIvideo2MultiPixStream_Pipeline_loop_width, i1 %sof, i1 %axi_last_2, i36 %axi_data_13_load, i12 %cols, i1 %cond, i36 %stream_in, i40 %s_axis_video_V_data_V, i5 %s_axis_video_V_keep_V, i5 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i1 %eol_loc, i36 %axi_data_14_loc" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:521]   --->   Operation 49 'call' 'call_ln521' <Predicate = true> <Delay = 2.17> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 50 [1/1] (0.00ns)   --->   "%empty_96 = wait i32 @_ssdm_op_Wait"   --->   Operation 50 'wait' 'empty_96' <Predicate = true> <Delay = 0.00>
+
+State 8 <SV = 7> <Delay = 2.68>
+ST_8 : Operation 51 [1/1] (0.00ns)   --->   "%eol_loc_load = load i1 %eol_loc"   --->   Operation 51 'load' 'eol_loc_load' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 52 [1/1] (0.00ns)   --->   "%axi_data_14_loc_load = load i36 %axi_data_14_loc"   --->   Operation 52 'load' 'axi_data_14_loc_load' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 53 [1/1] (0.00ns)   --->   "%empty_97 = wait i32 @_ssdm_op_Wait"   --->   Operation 53 'wait' 'empty_97' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 54 [2/2] (2.68ns)   --->   "%call_ln0 = call void @AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol, i36 %axi_data_14_loc_load, i1 %eol_loc_load, i40 %s_axis_video_V_data_V, i5 %s_axis_video_V_keep_V, i5 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i36 %axi_data_13"   --->   Operation 54 'call' 'call_ln0' <Predicate = true> <Delay = 2.68> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 55 [1/1] (0.00ns)   --->   "%specloopname_ln541 = specloopname void @_ssdm_op_SpecLoopName, void @empty_52" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:541]   --->   Operation 55 'specloopname' 'specloopname_ln541' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 56 [1/2] (0.00ns)   --->   "%call_ln0 = call void @AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol, i36 %axi_data_14_loc_load, i1 %eol_loc_load, i40 %s_axis_video_V_data_V, i5 %s_axis_video_V_keep_V, i5 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i36 %axi_data_13"   --->   Operation 56 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 57 [1/1] (0.00ns)   --->   "%br_ln541 = br void %loop_width" [C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:541]   --->   Operation 57 'br' 'br_ln541' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.737ns, clock uncertainty: 1.819ns.
+
+ <State 1>: 4.782ns
+The critical path consists of the following:
+	wire read operation ('p_read_5') on port 'p_read' [18]  (2.391 ns)
+	fifo write operation ('write_ln0') on port 'HwReg_height_c13' [23]  (2.391 ns)
+
+ <State 2>: 1.844ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start' [32]  (1.844 ns)
+
+ <State 3>: 0.844ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start' [32]  (0.844 ns)
+
+ <State 4>: 0.844ns
+The critical path consists of the following:
+	'load' operation 1 bit ('axi_last_loc_load') on local variable 'axi_last_loc' [33]  (0.000 ns)
+	multiplexor before 'phi' operation 1 bit ('sof') [39]  (0.844 ns)
+
+ <State 5>: 4.511ns
+The critical path consists of the following:
+	'load' operation 12 bit ('i', C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:541) on local variable 'i', C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:541 [41]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln541', C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:541) [42]  (1.333 ns)
+	'call' operation 0 bit ('call_ln521', C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:521) to 'AXIvideo2MultiPixStream_Pipeline_loop_width' [50]  (3.177 ns)
+
+ <State 6>: 2.177ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln521', C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:521) to 'AXIvideo2MultiPixStream_Pipeline_loop_width' [50]  (2.177 ns)
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+ <State 8>: 2.688ns
+The critical path consists of the following:
+	'load' operation 1 bit ('eol_loc_load') on local variable 'eol_loc' [51]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol' [55]  (2.688 ns)
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

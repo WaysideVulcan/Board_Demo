@@ -1,0 +1,286 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2015.1 (win64) Build 1215546 Mon Apr 27 19:22:08 MDT 2015
+| Date             : Sun May 03 17:02:31 2015
+| Host             : XCOJAMESM22 running 64-bit Service Pack 1  (build 7601)
+| Command          : report_power -file xilinx_pcie_2_1_ep_7x_power_routed.rpt -pb xilinx_pcie_2_1_ep_7x_power_summary_routed.pb
+| Design           : xilinx_pcie_2_1_ep_7x
+| Device           : xc7vx485tffg1761-2
+| Design State     : Routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+-------+
+| Total On-Chip Power (W)  | 3.183 |
+| Dynamic (W)              | 2.902 |
+| Device Static (W)        | 0.281 |
+| Effective TJA (C/W)      | 1.1   |
+| Max Ambient (C)          | 81.4  |
+| Junction Temperature (C) | 28.6  |
+| Confidence Level         | Low   |
+| Setting File             | ---   |
+| Simulation Activity File | ---   |
+| Design Nets Matched      | NA    |
++--------------------------+-------+
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.067 |       11 |       --- |             --- |
+| Slice Logic             |     0.020 |     8483 |       --- |             --- |
+|   LUT as Logic          |     0.018 |     3545 |    303600 |            1.17 |
+|   Register              |     0.001 |     4117 |    607200 |            0.68 |
+|   CARRY4                |    <0.001 |      109 |     75900 |            0.14 |
+|   F7/F8 Muxes           |    <0.001 |       64 |    303600 |            0.02 |
+|   Others                |     0.000 |      280 |       --- |             --- |
+|   LUT as Shift Register |     0.000 |       56 |    130800 |            0.04 |
+| Signals                 |     0.034 |     7813 |       --- |             --- |
+| Block RAM               |     0.051 |        8 |      1030 |            0.78 |
+| MMCM                    |     0.109 |        1 |        14 |            7.14 |
+| PCIE                    |     0.082 |        1 |         4 |           25.00 |
+| I/O                     |     0.002 |        5 |       700 |            0.71 |
+| GTX                     |     2.537 |        8 |        28 |           28.57 |
+| Static Power            |     0.281 |          |           |                 |
+| Total                   |     3.183 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.697 |       0.542 |      0.155 |
+| Vccaux    |       1.800 |     0.098 |       0.060 |      0.038 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.002 |       0.001 |      0.001 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.008 |       0.004 |      0.004 |
+| MGTAVcc   |       1.000 |     1.218 |       1.211 |      0.007 |
+| MGTAVtt   |       1.200 |     0.871 |       0.864 |      0.008 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| MGTZVccl  |       1.075 |     0.000 |       0.000 |      0.000 |
+| MGTZAVcc  |       1.075 |     0.000 |       0.000 |      0.000 |
+| MGTZVcch  |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.1                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 2.2                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                                                                              | Domain                                                                                                                          | Constraint (ns) |
++----------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| clk_125mhz_mux_x1y0                                                                                                                                | vc707_pcie_x8_gen2_support_i/pipe_clock_i/gen3_reg2_reg_0                                                                       |             4.0 |
+| clk_125mhz_x1y0                                                                                                                                    | vc707_pcie_x8_gen2_support_i/pipe_clock_i/clk_125mhz                                                                            |             8.0 |
+| clk_250mhz_mux_x1y0                                                                                                                                | vc707_pcie_x8_gen2_support_i/pipe_clock_i/gen3_reg2_reg_0                                                                       |             4.0 |
+| clk_250mhz_x1y0                                                                                                                                    | vc707_pcie_x8_gen2_support_i/pipe_clock_i/clk_250mhz                                                                            |             4.0 |
+| mmcm_fb                                                                                                                                            | vc707_pcie_x8_gen2_support_i/pipe_clock_i/mmcm_fb                                                                               |            10.0 |
+| sys_clk                                                                                                                                            | sys_clk_p                                                                                                                       |            10.0 |
+| userclk1                                                                                                                                           | vc707_pcie_x8_gen2_support_i/pipe_clock_i/userclk1                                                                              |             2.0 |
+| userclk2                                                                                                                                           | vc707_pcie_x8_gen2_support_i/pipe_clock_i/userclk2                                                                              |             4.0 |
+| vc707_pcie_x8_gen2_support_i/vc707_pcie_x8_gen2_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i/TXOUTCLK | vc707_pcie_x8_gen2_support_i/vc707_pcie_x8_gen2_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/pipe_txoutclk_out |            10.0 |
++----------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++----------------------------------------------------------------------------------+-----------+
+| Name                                                                             | Power (W) |
++----------------------------------------------------------------------------------+-----------+
+| xilinx_pcie_2_1_ep_7x                                                            |     2.902 |
+|   app                                                                            |     0.016 |
+|     PIO                                                                          |     0.016 |
+|       PIO_EP_inst                                                                |     0.016 |
+|         EP_MEM_inst                                                              |     0.011 |
+|           EP_MEM_inst                                                            |     0.010 |
+|         EP_RX_inst                                                               |     0.003 |
+|         EP_TX_inst                                                               |     0.002 |
+|       PIO_TO_inst                                                                |    <0.001 |
+|   vc707_pcie_x8_gen2_support_i                                                   |     2.883 |
+|     pipe_clock_i                                                                 |     0.111 |
+|     vc707_pcie_x8_gen2_i                                                         |     2.771 |
+|       inst                                                                       |     2.771 |
+|         inst                                                                     |     2.771 |
+|           gt_top_i                                                               |     2.612 |
+|             gt_rx_valid_filter[0].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|             gt_rx_valid_filter[1].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|             gt_rx_valid_filter[2].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|             gt_rx_valid_filter[3].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|             gt_rx_valid_filter[4].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|             gt_rx_valid_filter[5].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|             gt_rx_valid_filter[6].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|             gt_rx_valid_filter[7].GT_RX_VALID_FILTER_7x_inst                     |    <0.001 |
+|             pipe_wrapper_i                                                       |     2.606 |
+|               pipe_lane[0].gt_wrapper_i                                          |     0.318 |
+|                 cpllPDInst                                                       |    <0.001 |
+|               pipe_lane[0].pipe_drp.pipe_drp_i                                   |     0.002 |
+|               pipe_lane[0].pipe_eq.pipe_eq_i                                     |     0.002 |
+|                 rxeq_scan_i                                                      |    <0.001 |
+|               pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i |     0.001 |
+|                 qpll_drp_i                                                       |     0.001 |
+|                 qpll_wrapper_i                                                   |    <0.001 |
+|               pipe_lane[0].pipe_rate.pipe_rate_i                                 |     0.003 |
+|               pipe_lane[0].pipe_sync_i                                           |    <0.001 |
+|               pipe_lane[0].pipe_user_i                                           |     0.001 |
+|               pipe_lane[1].gt_wrapper_i                                          |     0.318 |
+|                 cpllPDInst                                                       |    <0.001 |
+|               pipe_lane[1].pipe_drp.pipe_drp_i                                   |     0.002 |
+|               pipe_lane[1].pipe_eq.pipe_eq_i                                     |     0.002 |
+|                 rxeq_scan_i                                                      |    <0.001 |
+|               pipe_lane[1].pipe_rate.pipe_rate_i                                 |     0.003 |
+|               pipe_lane[1].pipe_sync_i                                           |    <0.001 |
+|               pipe_lane[1].pipe_user_i                                           |     0.001 |
+|               pipe_lane[2].gt_wrapper_i                                          |     0.318 |
+|                 cpllPDInst                                                       |    <0.001 |
+|               pipe_lane[2].pipe_drp.pipe_drp_i                                   |     0.002 |
+|               pipe_lane[2].pipe_eq.pipe_eq_i                                     |     0.002 |
+|                 rxeq_scan_i                                                      |    <0.001 |
+|               pipe_lane[2].pipe_rate.pipe_rate_i                                 |     0.003 |
+|               pipe_lane[2].pipe_sync_i                                           |    <0.001 |
+|               pipe_lane[2].pipe_user_i                                           |     0.001 |
+|               pipe_lane[3].gt_wrapper_i                                          |     0.318 |
+|                 cpllPDInst                                                       |    <0.001 |
+|               pipe_lane[3].pipe_drp.pipe_drp_i                                   |     0.002 |
+|               pipe_lane[3].pipe_eq.pipe_eq_i                                     |     0.002 |
+|                 rxeq_scan_i                                                      |    <0.001 |
+|               pipe_lane[3].pipe_rate.pipe_rate_i                                 |     0.003 |
+|               pipe_lane[3].pipe_sync_i                                           |    <0.001 |
+|               pipe_lane[3].pipe_user_i                                           |     0.001 |
+|               pipe_lane[4].gt_wrapper_i                                          |     0.318 |
+|                 cpllPDInst                                                       |    <0.001 |
+|               pipe_lane[4].pipe_drp.pipe_drp_i                                   |     0.002 |
+|               pipe_lane[4].pipe_eq.pipe_eq_i                                     |     0.002 |
+|                 rxeq_scan_i                                                      |    <0.001 |
+|               pipe_lane[4].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i |     0.001 |
+|                 qpll_drp_i                                                       |     0.001 |
+|                 qpll_wrapper_i                                                   |    <0.001 |
+|               pipe_lane[4].pipe_rate.pipe_rate_i                                 |     0.003 |
+|               pipe_lane[4].pipe_sync_i                                           |    <0.001 |
+|               pipe_lane[4].pipe_user_i                                           |     0.001 |
+|               pipe_lane[5].gt_wrapper_i                                          |     0.318 |
+|                 cpllPDInst                                                       |    <0.001 |
+|               pipe_lane[5].pipe_drp.pipe_drp_i                                   |     0.002 |
+|               pipe_lane[5].pipe_eq.pipe_eq_i                                     |     0.002 |
+|                 rxeq_scan_i                                                      |    <0.001 |
+|               pipe_lane[5].pipe_rate.pipe_rate_i                                 |     0.003 |
+|               pipe_lane[5].pipe_sync_i                                           |    <0.001 |
+|               pipe_lane[5].pipe_user_i                                           |     0.001 |
+|               pipe_lane[6].gt_wrapper_i                                          |     0.318 |
+|                 cpllPDInst                                                       |    <0.001 |
+|               pipe_lane[6].pipe_drp.pipe_drp_i                                   |     0.002 |
+|               pipe_lane[6].pipe_eq.pipe_eq_i                                     |     0.002 |
+|                 rxeq_scan_i                                                      |    <0.001 |
+|               pipe_lane[6].pipe_rate.pipe_rate_i                                 |     0.003 |
+|               pipe_lane[6].pipe_sync_i                                           |    <0.001 |
+|               pipe_lane[6].pipe_user_i                                           |     0.001 |
+|               pipe_lane[7].gt_wrapper_i                                          |     0.318 |
+|                 cpllPDInst                                                       |    <0.001 |
+|               pipe_lane[7].pipe_drp.pipe_drp_i                                   |     0.002 |
+|               pipe_lane[7].pipe_eq.pipe_eq_i                                     |     0.002 |
+|                 rxeq_scan_i                                                      |    <0.001 |
+|               pipe_lane[7].pipe_rate.pipe_rate_i                                 |     0.003 |
+|               pipe_lane[7].pipe_sync_i                                           |    <0.001 |
+|               pipe_lane[7].pipe_user_i                                           |     0.001 |
+|               pipe_reset.pipe_reset_i                                            |     0.002 |
+|               qpll_reset.qpll_reset_i                                            |     0.001 |
+|           pcie_top_i                                                             |     0.158 |
+|             axi_basic_top                                                        |     0.012 |
+|               rx_inst                                                            |     0.009 |
+|                 rx_null_gen_inst                                                 |     0.001 |
+|                 rx_pipeline_inst                                                 |     0.008 |
+|               tx_inst                                                            |     0.003 |
+|                 thrtl_ctl_enabled.tx_thrl_ctl_inst                               |    <0.001 |
+|                 tx_pipeline_inst                                                 |     0.003 |
+|             pcie_7x_i                                                            |     0.136 |
+|               pcie_bram_top                                                      |     0.048 |
+|                 pcie_brams_rx                                                    |     0.024 |
+|                   brams[0].ram                                                   |     0.012 |
+|                     use_sdp.ramb36sdp                                            |     0.012 |
+|                   brams[1].ram                                                   |     0.012 |
+|                     use_sdp.ramb36sdp                                            |     0.012 |
+|                 pcie_brams_tx                                                    |     0.024 |
+|                   brams[0].ram                                                   |     0.012 |
+|                     use_sdp.ramb36sdp                                            |     0.012 |
+|                   brams[1].ram                                                   |     0.012 |
+|                     use_sdp.ramb36sdp                                            |     0.012 |
+|             pcie_pipe_pipeline_i                                                 |     0.009 |
+|               pipe_2_lane.pipe_lane_1_i                                          |     0.001 |
+|               pipe_4_lane.pipe_lane_2_i                                          |    <0.001 |
+|               pipe_4_lane.pipe_lane_3_i                                          |    <0.001 |
+|               pipe_8_lane.pipe_lane_4_i                                          |     0.001 |
+|               pipe_8_lane.pipe_lane_5_i                                          |     0.001 |
+|               pipe_8_lane.pipe_lane_6_i                                          |     0.001 |
+|               pipe_8_lane.pipe_lane_7_i                                          |     0.001 |
+|               pipe_lane_0_i                                                      |     0.001 |
+|               pipe_misc_i                                                        |    <0.001 |
++----------------------------------------------------------------------------------+-----------+
+
+

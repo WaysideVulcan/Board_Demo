@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon May  6 17:46:51 2024
+# Process ID: 23216
+# Current directory: C:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.runs/versal_ibert_urlp_7_0_synth_1
+# Command line: vivado.exe -log versal_ibert_urlp_7_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source versal_ibert_urlp_7_0.tcl
+# Log file: C:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.runs/versal_ibert_urlp_7_0_synth_1/versal_ibert_urlp_7_0.vds
+# Journal file: C:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.runs/versal_ibert_urlp_7_0_synth_1\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+source versal_ibert_urlp_7_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:46 . Memory (MB): peak = 582.883 ; gain = 182.781
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: versal_ibert_urlp_7_0
+Command: synth_design -top versal_ibert_urlp_7_0 -part xcvp1202-vsva2785-2MHP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvp1202'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvp1202'
+INFO: [Device 21-403] Loading part xcvp1202-vsva2785-2MHP-e-S
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18740
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2616.719 ; gain = 425.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'versal_ibert_urlp_7_0' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_urlp_7_0/synth/versal_ibert_urlp_7_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'util_reduced_logic_v2_0_5_util_reduced_logic' [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ipshared/7747/hdl/util_reduced_logic_v2_0_vl_rfs.v:118]
+INFO: [Synth 8-6155] done synthesizing module 'util_reduced_logic_v2_0_5_util_reduced_logic' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ipshared/7747/hdl/util_reduced_logic_v2_0_vl_rfs.v:118]
+INFO: [Synth 8-6155] done synthesizing module 'versal_ibert_urlp_7_0' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_urlp_7_0/synth/versal_ibert_urlp_7_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 2729.867 ; gain = 539.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 2747.781 ; gain = 556.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 2747.781 ; gain = 556.941
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2747.781 ; gain = 0.000
+INFO: [Constraints 18-6336] Loading Clock Expansion Window constraints config file for device xcvp1202.
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvp1202.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2872.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 2873.594 ; gain = 1.035
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:43 . Memory (MB): peak = 2873.594 ; gain = 682.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvp1202-vsva2785-2MHP-e-S
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:43 . Memory (MB): peak = 2873.594 ; gain = 682.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:43 . Memory (MB): peak = 2873.594 ; gain = 682.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:43 . Memory (MB): peak = 2873.594 ; gain = 682.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3984 (col length:166)
+BRAMs: 2682 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3330] design versal_ibert_urlp_7_0 has an empty top module
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:50 . Memory (MB): peak = 2873.594 ; gain = 682.754
+---------------------------------------------------------------------------------

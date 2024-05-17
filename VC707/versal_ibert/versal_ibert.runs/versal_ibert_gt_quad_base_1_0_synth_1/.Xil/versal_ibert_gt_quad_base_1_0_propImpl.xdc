@@ -1,0 +1,12 @@
+set_property SRC_FILE_INFO {cfile:c:/Vulcan/Design_Tool/Board_Demo/VC707/versal_ibert/versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_1_0/versal_ibert_gt_quad_base_1_0.xdc rfile:../../../versal_ibert.gen/sources_1/bd/versal_ibert/ip/versal_ibert_gt_quad_base_1_0/versal_ibert_gt_quad_base_1_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+current_instance inst
+set_property src_info {type:SCOPED_XDC file:1 line:42 export:INPUT save:INPUT read:READ} [current_design]
+create_waiver -internal -scope -type CDC -id {CDC-11} -user "gt_quad_base" -tags "1126726" -desc "Synchronizer on the TX rate port to latch on APB3CLK exsist.The CDC-11 warning is waived as it is safe" -to [get_pins -hier -filter {NAME =~ */ch*_*x_function_inst/synch_vec_*xrate[*].*XRATE_xpm_internal_sync/syncstages_ff_reg[*]/D }]
+set_property src_info {type:SCOPED_XDC file:1 line:44 export:INPUT save:INPUT read:READ} [current_design]
+create_waiver -internal -scope -type CDC -id {CDC-11} -user "gt_quad_base" -desc "CDC-11 waived as it is safe" -to [get_pins -hier -filter {NAME =~ */ch*_*x_function_inst/*XPRERATECHANGE_xpm_internal_sync/syncstages_ff_reg[0]/D}]
+set_property src_info {type:SCOPED_XDC file:1 line:45 export:INPUT save:INPUT read:READ} [current_design]
+create_waiver -internal -scope -type CDC -id {CDC-11} -user "gt_quad_base" -desc "CDC-11 waived as it is safe" -to [get_pins -hier -filter {NAME =~ */ch*_*x_function_inst/MST*XRESET_xpm_internal_sync/syncstages_ff_reg[0]/D}]
+set_property src_info {type:SCOPED_XDC file:1 line:46 export:INPUT save:INPUT read:READ} [current_design]
+create_waiver -internal -scope -type CDC -id {CDC-11} -user "gt_quad_base" -desc "CDC-11 waived as it is safe" -to [get_pins -hier -filter {NAME =~ */ch*_*x_function_inst/*XDATAPATHRESET_xpm_internal_sync/syncstages_ff_reg[0]/D}]
+set_property src_info {type:SCOPED_XDC file:1 line:47 export:INPUT save:INPUT read:READ} [current_design]
+create_waiver -internal -scope -type CDC -id {CDC-11} -user "gt_quad_base" -desc "CDC-11 waived as it is safe" -to [get_pins -hier -filter {NAME =~ */ch*_*x_function_inst/synch_vec_*xprbssel[*].*XPRBS_xpm_internal_sync/syncstages_ff_reg[0]/D}]

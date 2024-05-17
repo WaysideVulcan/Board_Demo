@@ -1,0 +1,8 @@
+create_clock -period 3.011 [get_ports -no_traverse {txusrclk_out}]
+create_clock -period 3.011 [get_ports -no_traverse {rxusrclk_out}]
+set_property -quiet CLOCK_PERIOD_OOC_TARGET 3.330 [get_ports -no_traverse -quiet apb3clk]
+set_property -quiet CLOCK_PERIOD_OOC_TARGET 3.011 [get_ports -no_traverse -quiet gt_rxusrclk]
+set_property -quiet CLOCK_PERIOD_OOC_TARGET 3.011 [get_ports -no_traverse -quiet gt_txusrclk]
+set_property -quiet CLOCK_PERIOD_OOC_TARGET 3.011 [get_ports -no_traverse -quiet rxusrclk_out]
+set_property -quiet CLOCK_PERIOD_OOC_TARGET 3.011 [get_ports -no_traverse -quiet txusrclk_out]
+set_property -quiet IS_IP_OOC_CELL TRUE [get_cells -of [get_ports -no_traverse -quiet apb3clk]]

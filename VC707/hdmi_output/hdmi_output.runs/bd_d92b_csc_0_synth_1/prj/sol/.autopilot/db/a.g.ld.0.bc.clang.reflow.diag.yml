@@ -1,0 +1,530 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_axi_io.h', 
+                   Line: 85, Column: 2 }
+Function:        _ZN3hls15AXIGetBitFieldsILi36E7ap_uintILi12EEEEvNS_4axisIS1_IXT_EELm1ELm1ELm1ELh56ELb0EEEiiRT0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void hls::AXIGetBitFields<36, ap_uint<12> >(ap_uint<36>, int, int, ap_uint<12>&)'
+    DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_axi_io.h', 
+                       Line: 60, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void hls::AXIGetBitFields<36, ap_uint<12> >(hls::axis<ap_uint<36>, 1ul, 1ul, 1ul, (unsigned char)56, false>, int, int, ap_uint<12>&)'
+    DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_axi_io.h', 
+                       Line: 83, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 517, Column: 18 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi12EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<12> >::Scalar()'
+    DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<36>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<3, ap_uint<12> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                       Line: 514, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 573, Column: 6 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi12EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void hls::AXIGetBitFields<36, ap_uint<12> >(hls::axis<ap_uint<36>, 1ul, 1ul, 1ul, (unsigned char)56, false>, int, int, ap_uint<12>&)'
+    DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_axi_io.h', 
+                       Line: 83, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<36>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<3, ap_uint<12> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                       Line: 514, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 572, Column: 6 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi12EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void hls::AXIGetBitFields<36, ap_uint<12> >(hls::axis<ap_uint<36>, 1ul, 1ul, 1ul, (unsigned char)56, false>, int, int, ap_uint<12>&)'
+    DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_axi_io.h', 
+                       Line: 83, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<36>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<3, ap_uint<12> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                       Line: 514, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 571, Column: 2 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi12EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void hls::AXIGetBitFields<36, ap_uint<12> >(hls::axis<ap_uint<36>, 1ul, 1ul, 1ul, (unsigned char)56, false>, int, int, ap_uint<12>&)'
+    DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_axi_io.h', 
+                       Line: 83, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<36>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<3, ap_uint<12> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                       Line: 514, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 127, Column: 18 }
+Function:        _ZL10v_csc_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERtS7_S7_S7_S7_S7_RsS8_S8_S8_S8_S8_S8_S8_S8_R6ap_intILi14EESB_SB_RS3_SC_S8_S8_S8_S8_S8_S8_S8_S8_S8_SB_SB_SB_SC_SC_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<12> >::Scalar()'
+    DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_csc_core(hls::stream<hls::Scalar<3, ap_uint<12> >, 0>&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, short&, short&, short&, short&, short&, short&, short&, short&, short&, ap_int<14>&, ap_int<14>&, ap_int<14>&, ap_uint<12>&, ap_uint<12>&, short&, short&, short&, short&, short&, short&, short&, short&, short&, ap_int<14>&, ap_int<14>&, ap_int<14>&, ap_uint<12>&, ap_uint<12>&, hls::stream<hls::Scalar<3, ap_uint<12> >, 0>&)'
+    DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                       Line: 104, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 128, Column: 18 }
+Function:        _ZL10v_csc_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERtS7_S7_S7_S7_S7_RsS8_S8_S8_S8_S8_S8_S8_S8_R6ap_intILi14EESB_SB_RS3_SC_S8_S8_S8_S8_S8_S8_S8_S8_S8_SB_SB_SB_SC_SC_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<12> >::Scalar()'
+    DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_csc_core(hls::stream<hls::Scalar<3, ap_uint<12> >, 0>&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, short&, short&, short&, short&, short&, short&, short&, short&, short&, ap_int<14>&, ap_int<14>&, ap_int<14>&, ap_uint<12>&, ap_uint<12>&, short&, short&, short&, short&, short&, short&, short&, short&, short&, ap_int<14>&, ap_int<14>&, ap_int<14>&, ap_uint<12>&, ap_uint<12>&, hls::stream<hls::Scalar<3, ap_uint<12> >, 0>&)'
+    DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                       Line: 104, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 615, Column: 18 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERNS0_INS_4axisIS2_ILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<12> >::Scalar()'
+    DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<3, ap_uint<12> >, 0>&, hls::stream<hls::axis<ap_uint<36>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                       Line: 613, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERNS0_INS_4axisIS2_ILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL10v_csc_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERtS7_S7_S7_S7_S7_RsS8_S8_S8_S8_S8_S8_S8_S8_R6ap_intILi14EESB_SB_RS3_SC_S8_S8_S8_S8_S8_S8_S8_S8_S8_SB_SB_SB_SC_SC_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            dstPix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL10v_csc_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERtS7_S7_S7_S7_S7_RsS8_S8_S8_S8_S8_S8_S8_S8_R6ap_intILi14EESB_SB_RS3_SC_S8_S8_S8_S8_S8_S8_S8_S8_S8_SB_SB_SB_SC_SC_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            srcPix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi12EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERNS0_INS_4axisIS2_ILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL10v_csc_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERtS7_S7_S7_S7_S7_RsS8_S8_S8_S8_S8_S8_S8_S8_R6ap_intILi14EESB_SB_RS3_SC_S8_S8_S8_S8_S8_S8_S8_S8_S8_SB_SB_SB_SC_SC_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            dstPix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL10v_csc_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERtS7_S7_S7_S7_S7_RsS8_S8_S8_S8_S8_S8_S8_S8_R6ap_intILi14EESB_SB_RS3_SC_S8_S8_S8_S8_S8_S8_S8_S8_S8_SB_SB_SB_SC_SC_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            srcPix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.gen/sources_1/bd/design_1/ip/design_1_v_proc_ss_0_0/bd_0/ip/ip_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi12EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 517, Column: 18 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi12EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            pix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 128, Column: 18 }
+Function:        _ZL10v_csc_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERtS7_S7_S7_S7_S7_RsS8_S8_S8_S8_S8_S8_S8_S8_R6ap_intILi14EESB_SB_RS3_SC_S8_S8_S8_S8_S8_S8_S8_S8_S8_SB_SB_SB_SC_SC_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            dstPix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 127, Column: 18 }
+Function:        _ZL10v_csc_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERtS7_S7_S7_S7_S7_RsS8_S8_S8_S8_S8_S8_S8_S8_R6ap_intILi14EESB_SB_RS3_SC_S8_S8_S8_S8_S8_S8_S8_S8_S8_SB_SB_SB_SC_SC_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            srcPix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 615, Column: 18 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERNS0_INS_4axisIS2_ILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            pix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 688, Column: 22 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERNS0_INS_4axisIS2_ILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_688_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 690, Column: 23 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERNS0_INS_4axisIS2_ILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_690_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 142, Column: 22 }
+Function:        _ZL10v_csc_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERtS7_S7_S7_S7_S7_RsS8_S8_S8_S8_S8_S8_S8_S8_R6ap_intILi14EESB_SB_RS3_SC_S8_S8_S8_S8_S8_S8_S8_S8_S8_SB_SB_SB_SC_SC_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_142_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 563, Column: 22 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi12EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_563_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 565, Column: 23 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi12EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_565_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 613, Column: 0 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERNS0_INS_4axisIS2_ILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_688_3
+  - String:          ''' ('
+  - LoopLoc:         'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:688:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MultiPixStream2AXIvideo
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 613, Column: 0 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERNS0_INS_4axisIS2_ILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_690_4
+  - String:          ''' ('
+  - LoopLoc:         'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:690:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MultiPixStream2AXIvideo
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 104, Column: 0 }
+Function:        _ZL10v_csc_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERtS7_S7_S7_S7_S7_RsS8_S8_S8_S8_S8_S8_S8_S8_R6ap_intILi14EESB_SB_RS3_SC_S8_S8_S8_S8_S8_S8_S8_S8_S8_SB_SB_SB_SC_SC_S6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_142_3
+  - String:          ''' ('
+  - LoopLoc:         'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:142:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          v_csc_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 514, Column: 0 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi12EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_563_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:563:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AXIvideo2MultiPixStream
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 514, Column: 0 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi12EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_565_2
+  - String:          ''' ('
+  - LoopLoc:         'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:565:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AXIvideo2MultiPixStream
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 434, Column: 24 }
+Function:        _Z5v_cscRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERhS7_RtS8_S8_S8_S8_S8_RsS9_S9_S9_S9_S9_S9_S9_S9_R6ap_intILi14EESC_SC_RS2_ILi12EESE_S9_S9_S9_S9_S9_S9_S9_S9_S9_SC_SC_SC_SE_SE_S6_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            stream_csc
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '36'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 431, Column: 24 }
+Function:        _Z5v_cscRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERhS7_RtS8_S8_S8_S8_S8_RsS9_S9_S9_S9_S9_S9_S9_S9_R6ap_intILi14EESC_SC_RS2_ILi12EESE_S9_S9_S9_S9_S9_S9_S9_S9_S9_SC_SC_SC_SE_SE_S6_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            stream_in
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '36'
+  - String:          '-bits'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 533, Column: 2 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi12EEEELi0EEERtSC_Rh
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        loop_wait_for_start
+  - String:          ' '
+  - LoopLoc:         'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:533:2'
+  - String:          ' '
+  - Function:        'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<36>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<3, ap_uint<12> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                       Line: 514, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 590, Column: 3 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi12EEEELi0EEERtSC_Rh
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        loop_wait_for_eol
+  - String:          ' '
+  - LoopLoc:         'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:590:3'
+  - String:          ' '
+  - Function:        'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<36>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<3, ap_uint<12> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                       Line: 514, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 136, Column: 21 }
+Function:        _ZL10v_csc_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi12EEEELi0EEERtS7_S7_S7_S7_S7_RsS8_S8_S8_S8_S8_S8_S8_S8_R6ap_intILi14EESB_SB_RS3_SC_S8_S8_S8_S8_S8_S8_S8_S8_S8_SB_SB_SB_SC_SC_S6_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_136_2
+  - String:          ' '
+  - LoopLoc:         'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:136:21'
+  - String:          ' '
+  - Function:        'v_csc_core(hls::stream<hls::Scalar<3, ap_uint<12> >, 0>&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, short&, short&, short&, short&, short&, short&, short&, short&, short&, ap_int<14>&, ap_int<14>&, ap_int<14>&, ap_uint<12>&, ap_uint<12>&, short&, short&, short&, short&, short&, short&, short&, short&, short&, ap_int<14>&, ap_int<14>&, ap_int<14>&, ap_uint<12>&, ap_uint<12>&, hls::stream<hls::Scalar<3, ap_uint<12> >, 0>&)'
+    DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                       Line: 104, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 590, Column: 3 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi12EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        loop_wait_for_eol
+  - String:          '''('
+  - LoopLoc:         'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:590:3'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: 'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp', 
+                   Line: 533, Column: 2 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi36EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi12EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        loop_wait_for_start
+  - String:          '''('
+  - LoopLoc:         'C:/Vulcan/Design_Tool/Board_Demo/VC707/hdmi_output/hdmi_output.runs/bd_d92b_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:533:2'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...

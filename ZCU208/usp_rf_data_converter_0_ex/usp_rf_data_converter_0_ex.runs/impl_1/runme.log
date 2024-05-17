@@ -1,0 +1,1077 @@
+
+*** Running vivado
+    with args -log usp_rf_data_converter_0_example_design.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source usp_rf_data_converter_0_example_design.tcl -notrace
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source usp_rf_data_converter_0_example_design.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 583.664 ; gain = 181.465
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 641.172 ; gain = 57.508
+Command: link_design -top usp_rf_data_converter_0_example_design -part xczu48dr-fsvg1517-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu48dr-fsvg1517-2-e
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_adc_sink_i_0/rfdc_ex_adc_sink_i_0.dcp' for cell 'usp_rf_data_converter_0_ex_i/adc_sink_i'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_dac_source_i_0/rfdc_ex_dac_source_i_0.dcp' for cell 'usp_rf_data_converter_0_ex_i/dac_source_i'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/rfdc_ex_smartconnect_0_0.dcp' for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0.dcp' for cell 'usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.651 . Memory (MB): peak = 1791.051 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 245 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0/inst'
+create_clock: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1992.266 ; gain = 34.625
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_clocks.xdc:65]
+get_clocks: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2380.117 ; gain = 387.852
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_1/bd_a15e_psr_aclk_0_board.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_1/bd_a15e_psr_aclk_0_board.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_1/bd_a15e_psr_aclk_0.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_1/bd_a15e_psr_aclk_0.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/switchboards/i_nodes/i_ar_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:158]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc:178]
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/bd_a15e_arni_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/switchboards/i_nodes/i_ar_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:158]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc:178]
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/bd_a15e_rni_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/switchboards/i_nodes/i_aw_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:122]
+INFO: [Common 17-14] Message 'Vivado 12-180' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:143]
+INFO: [Common 17-14] Message 'Vivado_Tcl 4-921' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc:143]
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/bd_a15e_awni_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/switchboards/i_nodes/i_aw_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_15/bd_a15e_wni_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_15/bd_a15e_wni_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_16/bd_a15e_bni_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_16/bd_a15e_bni_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_21/bd_a15e_sarn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/s00_nodes/s00_ar_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_21/bd_a15e_sarn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/s00_nodes/s00_ar_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_22/bd_a15e_srn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/s00_nodes/s00_r_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_22/bd_a15e_srn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/s00_nodes/s00_r_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_23/bd_a15e_sawn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_23/bd_a15e_sawn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_24/bd_a15e_swn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_24/bd_a15e_swn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_25/bd_a15e_sbn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/s00_nodes/s00_b_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_25/bd_a15e_sbn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/s00_nodes/s00_b_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_27/bd_a15e_m00arn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m00_nodes/m00_ar_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_27/bd_a15e_m00arn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m00_nodes/m00_ar_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_28/bd_a15e_m00rn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m00_nodes/m00_r_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_28/bd_a15e_m00rn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m00_nodes/m00_r_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_29/bd_a15e_m00awn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m00_nodes/m00_aw_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_29/bd_a15e_m00awn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m00_nodes/m00_aw_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_30/bd_a15e_m00wn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_30/bd_a15e_m00wn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_31/bd_a15e_m00bn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_31/bd_a15e_m00bn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_34/bd_a15e_m01arn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m01_nodes/m01_ar_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_34/bd_a15e_m01arn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m01_nodes/m01_ar_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_35/bd_a15e_m01rn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m01_nodes/m01_r_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_35/bd_a15e_m01rn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m01_nodes/m01_r_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_36/bd_a15e_m01awn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m01_nodes/m01_aw_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_36/bd_a15e_m01awn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m01_nodes/m01_aw_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_37/bd_a15e_m01wn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_37/bd_a15e_m01wn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_38/bd_a15e_m01bn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m01_nodes/m01_b_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_38/bd_a15e_m01bn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m01_nodes/m01_b_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_41/bd_a15e_m02arn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m02_nodes/m02_ar_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_41/bd_a15e_m02arn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m02_nodes/m02_ar_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_42/bd_a15e_m02rn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m02_nodes/m02_r_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_42/bd_a15e_m02rn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m02_nodes/m02_r_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_43/bd_a15e_m02awn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m02_nodes/m02_aw_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_43/bd_a15e_m02awn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m02_nodes/m02_aw_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_44/bd_a15e_m02wn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m02_nodes/m02_w_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_44/bd_a15e_m02wn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m02_nodes/m02_w_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_45/bd_a15e_m02bn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m02_nodes/m02_b_node/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_45/bd_a15e_m02bn_0_clocks.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m02_nodes/m02_b_node/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/smartconnect.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/smartconnect.xdc:10]
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/smartconnect.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0/inst'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc]
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc]
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0.xdc] for cell 'usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0/inst'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0.xdc] for cell 'usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0/inst'
+INFO: [Project 1-1714] 221 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 1080 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2380.117 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 91 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 91 instances
+
+The system cannot find the path specified.
+19 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 2380.117 ; gain = 1738.945
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu48dr'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2380.117 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1a0185694
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.917 . Memory (MB): peak = 2380.117 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1a0185694
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2743.070 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1a0185694
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 2743.070 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1a0185694
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 2743.070 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1a0185694
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.387 . Memory (MB): peak = 2743.070 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1a0185694
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.453 . Memory (MB): peak = 2743.070 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1a0185694
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.461 . Memory (MB): peak = 2743.070 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1566] Pulled 1 inverters resulting in an inversion of 2 pins
+INFO: [Opt 31-138] Pushed 79 inverter(s) to 3317 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 9a3f04b6
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2743.070 ; gain = 0.000
+Retarget | Checksum: 9a3f04b6
+INFO: [Opt 31-389] Phase Retarget created 141 cells and removed 222 cells
+INFO: [Opt 31-1021] In phase Retarget, 107 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 9cc073e7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2743.070 ; gain = 0.000
+Constant propagation | Checksum: 9cc073e7
+INFO: [Opt 31-389] Phase Constant propagation created 6 cells and removed 36 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 107 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: f0798a36
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2743.070 ; gain = 0.000
+Sweep | Checksum: f0798a36
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 218 cells
+INFO: [Opt 31-1021] In phase Sweep, 134 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: f0798a36
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2743.070 ; gain = 0.000
+BUFG optimization | Checksum: f0798a36
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[0].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[10].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[11].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[12].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[13].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[14].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[15].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[1].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[2].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[3].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[4].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[5].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[6].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[7].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[8].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].genblk1[9].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[0].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[10].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[11].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[12].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[13].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[14].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[15].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[1].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[2].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[3].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[4].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[5].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[6].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[7].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[8].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].genblk1[9].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[0].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[10].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[11].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[12].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[13].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[14].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[15].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[1].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[2].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[3].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[4].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[5].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[6].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[7].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[8].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].genblk1[9].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[0].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[10].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[11].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[12].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[13].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[14].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[15].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[1].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[2].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[3].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[4].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[5].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[6].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[7].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[8].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].genblk1[9].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[0].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[10].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[11].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[12].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[13].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[14].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[15].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[1].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[2].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[3].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[4].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[5].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[6].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[7].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[8].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].genblk1[9].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[0].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[10].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[11].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[12].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[13].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[14].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[15].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[1].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[2].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[3].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[4].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[5].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[6].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[7].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[8].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].genblk1[9].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].genblk1[0].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].genblk1[10].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].genblk1[11].srl_delay_gen_1 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].genblk1[12].srl_delay_gen_1 due to none static srl address bits
+INFO: [Common 17-14] Message 'Opt 31-1131' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: f0798a36
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2743.070 ; gain = 0.000
+Shift Register Optimization | Checksum: f0798a36
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: f0798a36
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2743.070 ; gain = 0.000
+Post Processing Netlist | Checksum: f0798a36
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 127 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1b80752cd
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2743.070 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 2743.070 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1b80752cd
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2743.070 ; gain = 0.000
+Phase 9 Finalization | Checksum: 1b80752cd
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2743.070 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             141  |             222  |                                            107  |
+|  Constant propagation         |               6  |              36  |                                            107  |
+|  Sweep                        |               0  |             218  |                                            134  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            127  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1b80752cd
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2743.070 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2743.070 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 8 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 16
+Ending PowerOpt Patch Enables Task | Checksum: 1b80752cd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 3205.621 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1b80752cd
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 3205.621 ; gain = 462.551
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1b80752cd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3205.621 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3205.621 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1b80752cd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 3205.621 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+49 Infos, 201 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:33 . Memory (MB): peak = 3205.621 ; gain = 825.504
+INFO: [runtcl-4] Executing : report_drc -file usp_rf_data_converter_0_example_design_drc_opted.rpt -pb usp_rf_data_converter_0_example_design_drc_opted.pb -rpx usp_rf_data_converter_0_example_design_drc_opted.rpx
+Command: report_drc -file usp_rf_data_converter_0_example_design_drc_opted.rpt -pb usp_rf_data_converter_0_example_design_drc_opted.pb -rpx usp_rf_data_converter_0_example_design_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/impl_1/usp_rf_data_converter_0_example_design_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3205.621 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.038 . Memory (MB): peak = 3205.621 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 3205.621 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3205.621 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 3205.621 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3205.621 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 3205.621 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.206 . Memory (MB): peak = 3205.621 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/impl_1/usp_rf_data_converter_0_example_design_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3205.621 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu48dr'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3205.621 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1258f93fe
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 3205.621 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3205.621 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1982d816a
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 4257.395 ; gain = 1051.773
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 23c92a2a0
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:54 . Memory (MB): peak = 4257.395 ; gain = 1051.773
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 23c92a2a0
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:54 . Memory (MB): peak = 4257.395 ; gain = 1051.773
+Phase 1 Placer Initialization | Checksum: 23c92a2a0
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:54 . Memory (MB): peak = 4257.395 ; gain = 1051.773
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1d17fdfba
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:01:01 . Memory (MB): peak = 4257.395 ; gain = 1051.773
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 253029e33
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:02 . Memory (MB): peak = 4257.395 ; gain = 1051.773
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 253029e33
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:18 . Memory (MB): peak = 4266.828 ; gain = 1061.207
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 1b8d1499a
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:19 . Memory (MB): peak = 4268.402 ; gain = 1062.781
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 1b8d1499a
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:19 . Memory (MB): peak = 4268.402 ; gain = 1062.781
+Phase 2.1.1 Partition Driven Placement | Checksum: 1b8d1499a
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:19 . Memory (MB): peak = 4268.402 ; gain = 1062.781
+Phase 2.1 Floorplanning | Checksum: 1b8d1499a
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:19 . Memory (MB): peak = 4268.402 ; gain = 1062.781
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1b8d1499a
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:19 . Memory (MB): peak = 4268.402 ; gain = 1062.781
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1b8d1499a
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:19 . Memory (MB): peak = 4268.402 ; gain = 1062.781
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 25526ef94
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:02:16 . Memory (MB): peak = 4424.555 ; gain = 1218.934
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 157 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 65 nets or LUTs. Breaked 0 LUT, combined 65 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-69] No nets found for rewiring optimization.
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4424.555 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             65  |                    65  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             65  |                    65  |           0  |           5  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 2c283de08
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:02:16 . Memory (MB): peak = 4424.555 ; gain = 1218.934
+Phase 2.4 Global Placement Core | Checksum: 259d9dcc2
+
+Time (s): cpu = 00:02:47 ; elapsed = 00:02:22 . Memory (MB): peak = 4424.555 ; gain = 1218.934
+Phase 2 Global Placement | Checksum: 259d9dcc2
+
+Time (s): cpu = 00:02:47 ; elapsed = 00:02:23 . Memory (MB): peak = 4424.555 ; gain = 1218.934
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 2c7b99665
+
+Time (s): cpu = 00:02:53 ; elapsed = 00:02:29 . Memory (MB): peak = 4424.555 ; gain = 1218.934
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 21abc02b1
+
+Time (s): cpu = 00:02:53 ; elapsed = 00:02:29 . Memory (MB): peak = 4424.555 ; gain = 1218.934
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 1f09330a4
+
+Time (s): cpu = 00:03:05 ; elapsed = 00:02:42 . Memory (MB): peak = 4429.461 ; gain = 1223.840
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 23a5f0c63
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:02:49 . Memory (MB): peak = 4448.293 ; gain = 1242.672
+Phase 3.3.2 Slice Area Swap | Checksum: 23a5f0c63
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:02:49 . Memory (MB): peak = 4453.297 ; gain = 1247.676
+Phase 3.3 Small Shape DP | Checksum: 17f4e8498
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:03:02 . Memory (MB): peak = 4459.453 ; gain = 1253.832
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 1e91bbe02
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:03:02 . Memory (MB): peak = 4459.453 ; gain = 1253.832
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 2bc32d3f8
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:03:02 . Memory (MB): peak = 4459.453 ; gain = 1253.832
+Phase 3 Detail Placement | Checksum: 2bc32d3f8
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:03:03 . Memory (MB): peak = 4459.453 ; gain = 1253.832
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1eec50fb6
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.708 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 19cd55f12
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.192 . Memory (MB): peak = 4510.129 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 19cd55f12
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.270 . Memory (MB): peak = 4510.129 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1eec50fb6
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:03:13 . Memory (MB): peak = 4510.129 ; gain = 1304.508
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.708. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 173152c30
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:03:13 . Memory (MB): peak = 4510.129 ; gain = 1304.508
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:03:13 . Memory (MB): peak = 4510.129 ; gain = 1304.508
+Phase 4.1 Post Commit Optimization | Checksum: 173152c30
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:03:13 . Memory (MB): peak = 4510.129 ; gain = 1304.508
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 4514.828 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 23bbb0aee
+
+Time (s): cpu = 00:03:50 ; elapsed = 00:03:26 . Memory (MB): peak = 4514.828 ; gain = 1309.207
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 23bbb0aee
+
+Time (s): cpu = 00:03:50 ; elapsed = 00:03:26 . Memory (MB): peak = 4514.828 ; gain = 1309.207
+Phase 4.3 Placer Reporting | Checksum: 23bbb0aee
+
+Time (s): cpu = 00:03:50 ; elapsed = 00:03:26 . Memory (MB): peak = 4514.828 ; gain = 1309.207
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4514.828 ; gain = 0.000
+
+Time (s): cpu = 00:03:50 ; elapsed = 00:03:26 . Memory (MB): peak = 4514.828 ; gain = 1309.207
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 310427b4d
+
+Time (s): cpu = 00:03:50 ; elapsed = 00:03:26 . Memory (MB): peak = 4514.828 ; gain = 1309.207
+Ending Placer Task | Checksum: 2a78aef60
+
+Time (s): cpu = 00:03:50 ; elapsed = 00:03:26 . Memory (MB): peak = 4514.828 ; gain = 1309.207
+88 Infos, 201 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:56 ; elapsed = 00:03:29 . Memory (MB): peak = 4514.828 ; gain = 1309.207
+INFO: [runtcl-4] Executing : report_io -file usp_rf_data_converter_0_example_design_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 4514.828 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file usp_rf_data_converter_0_example_design_utilization_placed.rpt -pb usp_rf_data_converter_0_example_design_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file usp_rf_data_converter_0_example_design_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 4514.828 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 4514.828 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.444 . Memory (MB): peak = 4514.828 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4514.828 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 4514.828 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 4514.828 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 4514.828 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.526 . Memory (MB): peak = 4514.828 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/impl_1/usp_rf_data_converter_0_example_design_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu48dr'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 4514.828 ; gain = 0.000
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+97 Infos, 201 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4514.828 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.460 . Memory (MB): peak = 4514.828 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4514.828 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 4514.828 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 4514.828 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 4514.828 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.537 . Memory (MB): peak = 4514.828 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/impl_1/usp_rf_data_converter_0_example_design_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu48dr'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: f9ccbe9f ConstDB: 0 ShapeSum: e5185203 RouteDB: c8a5debe
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4514.828 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 7fe545a9 | NumContArr: d1d8f218 | Constraints: d19f00d9 | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2e6063337
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4514.828 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2e6063337
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4514.828 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2e6063337
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4514.828 ; gain = 0.000
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 340f49aba
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 5128.250 ; gain = 613.422
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 2bd39d0e0
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 5128.250 ; gain = 613.422
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.702  | TNS=0.000  | WHS=-0.028 | THS=-0.236 |
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 12891
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 9281
+  Number of Partially Routed Nets     = 3610
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 2e6f0605d
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 5227.812 ; gain = 712.984
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 2e6f0605d
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 5227.812 ; gain = 712.984
+
+Phase 3.2 Initial Net Routing
+Phase 3.2 Initial Net Routing | Checksum: 1212122db
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 5227.812 ; gain = 712.984
+Phase 3 Initial Routing | Checksum: 1b2eab21b
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 5227.812 ; gain = 712.984
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2699
+ Number of Nodes with overlaps = 238
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.679  | TNS=0.000  | WHS=0.006  | THS=0.000  |
+
+Phase 4.1 Global Iteration 0 | Checksum: 227300333
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 5227.812 ; gain = 712.984
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 1ea362560
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 5227.812 ; gain = 712.984
+Phase 4 Rip-up And Reroute | Checksum: 1ea362560
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 5227.812 ; gain = 712.984
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 278aa2061
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 5227.812 ; gain = 712.984
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 278aa2061
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 5227.812 ; gain = 712.984
+Phase 5 Delay and Skew Optimization | Checksum: 278aa2061
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 5227.812 ; gain = 712.984
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 2e7b80f0f
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 5227.812 ; gain = 712.984
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.679  | TNS=0.000  | WHS=0.006  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 2ca7698fc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 5227.812 ; gain = 712.984
+Phase 6 Post Hold Fix | Checksum: 2ca7698fc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 5227.812 ; gain = 712.984
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.956399 %
+  Global Horizontal Routing Utilization  = 0.433352 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 2ca7698fc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 5227.812 ; gain = 712.984
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 2ca7698fc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 5227.812 ; gain = 712.984
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 2ca7698fc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 5227.812 ; gain = 712.984
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 2ca7698fc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 5227.812 ; gain = 712.984
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.679  | TNS=0.000  | WHS=0.006  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 2ca7698fc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 5227.812 ; gain = 712.984
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 12 Post-Route Event Processing
+Phase 12 Post-Route Event Processing | Checksum: 13719c0ed
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 5227.812 ; gain = 712.984
+Ending Routing Task | Checksum: 13719c0ed
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 5227.812 ; gain = 712.984
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+111 Infos, 201 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 5227.812 ; gain = 712.984
+INFO: [runtcl-4] Executing : report_drc -file usp_rf_data_converter_0_example_design_drc_routed.rpt -pb usp_rf_data_converter_0_example_design_drc_routed.pb -rpx usp_rf_data_converter_0_example_design_drc_routed.rpx
+Command: report_drc -file usp_rf_data_converter_0_example_design_drc_routed.rpt -pb usp_rf_data_converter_0_example_design_drc_routed.pb -rpx usp_rf_data_converter_0_example_design_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/impl_1/usp_rf_data_converter_0_example_design_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file usp_rf_data_converter_0_example_design_methodology_drc_routed.rpt -pb usp_rf_data_converter_0_example_design_methodology_drc_routed.pb -rpx usp_rf_data_converter_0_example_design_methodology_drc_routed.rpx
+Command: report_methodology -file usp_rf_data_converter_0_example_design_methodology_drc_routed.rpt -pb usp_rf_data_converter_0_example_design_methodology_drc_routed.pb -rpx usp_rf_data_converter_0_example_design_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/impl_1/usp_rf_data_converter_0_example_design_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file usp_rf_data_converter_0_example_design_power_routed.rpt -pb usp_rf_data_converter_0_example_design_power_summary_routed.pb -rpx usp_rf_data_converter_0_example_design_power_routed.rpx
+Command: report_power -file usp_rf_data_converter_0_example_design_power_routed.rpt -pb usp_rf_data_converter_0_example_design_power_summary_routed.pb -rpx usp_rf_data_converter_0_example_design_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+121 Infos, 201 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 5227.812 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file usp_rf_data_converter_0_example_design_route_status.rpt -pb usp_rf_data_converter_0_example_design_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file usp_rf_data_converter_0_example_design_timing_summary_routed.rpt -pb usp_rf_data_converter_0_example_design_timing_summary_routed.pb -rpx usp_rf_data_converter_0_example_design_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file usp_rf_data_converter_0_example_design_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file usp_rf_data_converter_0_example_design_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 5227.812 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file usp_rf_data_converter_0_example_design_bus_skew_routed.rpt -pb usp_rf_data_converter_0_example_design_bus_skew_routed.pb -rpx usp_rf_data_converter_0_example_design_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 5227.812 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.797 . Memory (MB): peak = 5227.812 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5227.812 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.234 . Memory (MB): peak = 5227.812 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 5227.812 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 5227.812 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 5227.812 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/impl_1/usp_rf_data_converter_0_example_design_routed.dcp' has been generated.
+INFO: [Memdata 28-208] The XPM instance: <usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/exdes_xpm_mem_ds_i/xpm_mem_dg_wrap2_i/xpm_mem_dg_sdpram_wrap_i/Ixpm_memory_tdpram/xpm_memory_base_inst> is part of IP: <usp_rf_data_converter_0_ex_i/dac_source_i>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <usp_rf_data_converter_0_ex_i/adc_sink_i/inst/ds_slice_20/exdes_xpm_mem_ds_i/xpm_mem_ds_wrap2_i/xpm_mem_dg_sdpram_wrap_i/Ixpm_memory_tdpram/xpm_memory_base_inst> is part of IP: <usp_rf_data_converter_0_ex_i/adc_sink_i>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force usp_rf_data_converter_0_example_design.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu48dr'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC NSTD-1] Unspecified I/O Standard: 129 out of 129 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: irq, adc2_axis_aresetn, dac0_axis_aresetn, s_axi_aresetn, adc2_axis_aclk, dac0_axis_aclk, s_axi_aclk, s_axi_araddr[23], s_axi_araddr[22], s_axi_araddr[21], s_axi_araddr[20], s_axi_araddr[19], s_axi_araddr[18], s_axi_araddr[17], s_axi_araddr[16]... and (the first 15 of 65 listed).
+ERROR: [DRC UCIO-1] Unconstrained Logical Port: 129 out of 129 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: irq, adc2_axis_aresetn, dac0_axis_aresetn, s_axi_aresetn, adc2_axis_aclk, dac0_axis_aclk, s_axi_aclk, s_axi_araddr[23], s_axi_araddr[22], s_axi_araddr[21], s_axi_araddr[20], s_axi_araddr[19], s_axi_araddr[18], s_axi_araddr[17], s_axi_araddr[16]... and (the first 15 of 65 listed).
+WARNING: [DRC RTSTAT-10] No routable loads: 27 net(s) have no routable loads. The problem bus(es) and/or net(s) are usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0/inst/rfdc_ex_usp_rf_data_converter_0_0_rf_wrapper_i/adc0_done_i, usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0/inst/rfdc_ex_usp_rf_data_converter_0_0_rf_wrapper_i/adc0_obs_done_i, usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0/inst/rfdc_ex_usp_rf_data_converter_0_0_rf_wrapper_i/adc1_done_i, usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0/inst/rfdc_ex_usp_rf_data_converter_0_0_rf_wrapper_i/adc1_obs_done_i, usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0/inst/rfdc_ex_usp_rf_data_converter_0_0_rf_wrapper_i/adc2_obs_done_i, usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0/inst/rfdc_ex_usp_rf_data_converter_0_0_rf_wrapper_i/adc3_done_i, usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0/inst/rfdc_ex_usp_rf_data_converter_0_0_rf_wrapper_i/adc3_obs_done_i, usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m00_nodes/m00_ar_node/inst/mi_handler_m_sc_areset_pipe, usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m02_nodes/m02_r_node/inst/mi_handler_m_sc_areset_pipe, usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m02_nodes/m02_b_node/inst/mi_handler_m_sc_areset_pipe, usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst/mi_handler_m_sc_areset_pipe, usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m02_nodes/m02_w_node/inst/mi_handler_m_sc_areset_pipe, usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/mi_handler_m_sc_areset_pipe, usp_rf_data_converter_0_ex_i/smartconnect_0/inst/s00_nodes/s00_r_node/inst/mi_handler_m_sc_areset_pipe, usp_rf_data_converter_0_ex_i/smartconnect_0/inst/m02_nodes/m02_ar_node/inst/mi_handler_m_sc_areset_pipe... and (the first 15 of 27 listed).
+INFO: [Vivado 12-3199] DRC finished with 2 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 1 Warnings, 0 Critical Warnings and 3 Errors encountered.
+write_bitstream failed
+ERROR: [Common 17-39] 'write_bitstream' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Mon May  6 11:11:54 2024...

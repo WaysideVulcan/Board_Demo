@@ -1,0 +1,295 @@
+
+*** Running vivado
+    with args -log usp_rf_data_converter_0_example_design.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source usp_rf_data_converter_0_example_design.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source usp_rf_data_converter_0_example_design.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 583.637 ; gain = 183.395
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 639.996 ; gain = 56.359
+Command: synth_design -top usp_rf_data_converter_0_example_design -part xczu48dr-fsvg1517-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Device 21-403] Loading part xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17088
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2113.020 ; gain = 372.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'dac0_clk_dac', assumed default net type 'wire' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.v:130]
+INFO: [Synth 8-6157] synthesizing module 'usp_rf_data_converter_0_example_design' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.v:60]
+INFO: [Synth 8-6157] synthesizing module 'rfdc_ex' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/synth/rfdc_ex.v:13]
+INFO: [Synth 8-6157] synthesizing module 'rfdc_ex_adc_sink_i_0' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/synth_1/.Xil/Vivado-19856-Vulcan/realtime/rfdc_ex_adc_sink_i_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rfdc_ex_adc_sink_i_0' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/synth_1/.Xil/Vivado-19856-Vulcan/realtime/rfdc_ex_adc_sink_i_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rfdc_ex_dac_source_i_0' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/synth_1/.Xil/Vivado-19856-Vulcan/realtime/rfdc_ex_dac_source_i_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rfdc_ex_dac_source_i_0' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/synth_1/.Xil/Vivado-19856-Vulcan/realtime/rfdc_ex_dac_source_i_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rfdc_ex_smartconnect_0_0' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/synth_1/.Xil/Vivado-19856-Vulcan/realtime/rfdc_ex_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rfdc_ex_smartconnect_0_0' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/synth_1/.Xil/Vivado-19856-Vulcan/realtime/rfdc_ex_smartconnect_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'rfdc_ex_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/synth/rfdc_ex.v:274]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'rfdc_ex_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/synth/rfdc_ex.v:274]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'rfdc_ex_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/synth/rfdc_ex.v:274]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'rfdc_ex_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/synth/rfdc_ex.v:274]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'rfdc_ex_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/synth/rfdc_ex.v:274]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'rfdc_ex_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/synth/rfdc_ex.v:274]
+WARNING: [Synth 8-7023] instance 'smartconnect_0' of module 'rfdc_ex_smartconnect_0_0' has 78 connections declared, but only 72 given [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/synth/rfdc_ex.v:274]
+INFO: [Synth 8-6157] synthesizing module 'rfdc_ex_usp_rf_data_converter_0_0' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/synth_1/.Xil/Vivado-19856-Vulcan/realtime/rfdc_ex_usp_rf_data_converter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rfdc_ex_usp_rf_data_converter_0_0' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/synth_1/.Xil/Vivado-19856-Vulcan/realtime/rfdc_ex_usp_rf_data_converter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rfdc_ex' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/synth/rfdc_ex.v:13]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp_diablo.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp_diablo.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'usp_rf_data_converter_0_example_design' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.v:60]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2205.383 ; gain = 464.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2223.316 ; gain = 482.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2223.316 ; gain = 482.441
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2235.309 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc] for cell 'usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0'
+create_clock: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2280.801 ; gain = 0.016
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc] for cell 'usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_adc_sink_i_0/rfdc_ex_adc_sink_i_0/rfdc_ex_adc_sink_i_0_in_context.xdc] for cell 'usp_rf_data_converter_0_ex_i/adc_sink_i'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_adc_sink_i_0/rfdc_ex_adc_sink_i_0/rfdc_ex_adc_sink_i_0_in_context.xdc] for cell 'usp_rf_data_converter_0_ex_i/adc_sink_i'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_dac_source_i_0/rfdc_ex_dac_source_i_0/rfdc_ex_dac_source_i_0_in_context.xdc] for cell 'usp_rf_data_converter_0_ex_i/dac_source_i'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_dac_source_i_0/rfdc_ex_dac_source_i_0/rfdc_ex_dac_source_i_0_in_context.xdc] for cell 'usp_rf_data_converter_0_ex_i/dac_source_i'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/rfdc_ex_smartconnect_0_0/rfdc_ex_smartconnect_0_0_in_context.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0'
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/rfdc_ex_smartconnect_0_0/rfdc_ex_smartconnect_0_0_in_context.xdc] for cell 'usp_rf_data_converter_0_ex_i/smartconnect_0'
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name =~ *usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0/inst/IP2Bus_Data_reg*}'. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc:79]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME== D} -of [get_cells -hier -filter {name =~ *usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0/inst/IP2Bus_Data_reg*}]'. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc:79]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc:80]
+WARNING: [Vivado 12-180] No cells matched '.*rf(?:da|ad)c_exdes_ctrl_i/(?:da|ad)c_exdes_cfg_i/.+num_samples_reg.*'. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc:87]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name=~*dg_slice_00*addrb_reg[*]}'. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc:88]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter name=~*dg_slice_00*addrbend_reg'. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc:94]
+WARNING: [Vivado 12-180] No cells matched '.*rf(?:da|ad)c_exdes_ctrl_i/(?:da|ad)c_exdes_cfg_i/.+num_samples_reg.*'. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc:100]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {name=~*ds_slice_20*addra_reg[*]}'. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc:101]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter name=~*ds_slice_20*working_i_reg'. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc:107]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter name=~*ds_slice_20*cap_complete_reg'. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc:113]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter name=~*ds_slice_20*wea_r_reg'. [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc:119]
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/usp_rf_data_converter_0_example_design_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/usp_rf_data_converter_0_example_design_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/usp_rf_data_converter_0_example_design_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2280.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  BUFG => BUFGCE: 3 instances
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2280.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 2280.801 ; gain = 539.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 2280.801 ; gain = 539.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for adc2_clk_n. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for adc2_clk_n. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for adc2_clk_p. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for adc2_clk_p. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for dac0_clk_n. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dac0_clk_n. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for dac0_clk_p. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dac0_clk_p. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for sysref_in_n. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sysref_in_n. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for sysref_in_p. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sysref_in_p. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for vin2_01_n. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for vin2_01_n. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for vin2_01_p. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for vin2_01_p. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for vout00_n. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for vout00_n. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for vout00_p. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for vout00_p. (constraint file  c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0/rfdc_ex_usp_rf_data_converter_0_0_in_context.xdc, line 22).
+Applied set_property KEEP_HIERARCHY = SOFT for usp_rf_data_converter_0_ex_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for usp_rf_data_converter_0_ex_i/usp_rf_data_converter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for usp_rf_data_converter_0_ex_i/adc_sink_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for usp_rf_data_converter_0_ex_i/dac_source_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for usp_rf_data_converter_0_ex_i/smartconnect_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 2280.801 ; gain = 539.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 2280.801 ; gain = 539.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 2280.801 ; gain = 539.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 2670.031 ; gain = 929.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 2670.105 ; gain = 929.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 2680.051 ; gain = 939.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 2694.812 ; gain = 953.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 2694.812 ; gain = 953.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 2694.812 ; gain = 953.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 2694.812 ; gain = 953.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 2694.812 ; gain = 953.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 2694.812 ; gain = 953.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |rfdc_ex_adc_sink_i_0              |         1|
+|2     |rfdc_ex_dac_source_i_0            |         1|
+|3     |rfdc_ex_smartconnect_0_0          |         1|
+|4     |rfdc_ex_usp_rf_data_converter_0_0 |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |rfdc_ex_adc_sink_i              |     1|
+|2     |rfdc_ex_dac_source_i            |     1|
+|3     |rfdc_ex_smartconnect_0          |     1|
+|4     |rfdc_ex_usp_rf_data_converter_0 |     1|
+|5     |BUFG                            |     3|
+|6     |IBUF                            |    91|
+|7     |OBUF                            |    42|
++------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 2694.812 ; gain = 953.938
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:51 . Memory (MB): peak = 2694.812 ; gain = 896.453
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:08 . Memory (MB): peak = 2694.812 ; gain = 953.938
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2702.879 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 94 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2757.465 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 94 instances were transformed.
+  BUFG => BUFGCE: 3 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 91 instances
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: 131958cd
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:24 . Memory (MB): peak = 2757.465 ; gain = 2117.469
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2757.465 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/synth_1/usp_rf_data_converter_0_example_design.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file usp_rf_data_converter_0_example_design_utilization_synth.rpt -pb usp_rf_data_converter_0_example_design_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May  6 11:05:10 2024...

@@ -1,0 +1,564 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon May  6 10:57:56 2024
+# Process ID: 22740
+# Current directory: c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/rfdc_ex_dac_source_i_0_synth_1
+# Command line: vivado.exe -log rfdc_ex_dac_source_i_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rfdc_ex_dac_source_i_0.tcl
+# Log file: c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/rfdc_ex_dac_source_i_0_synth_1/rfdc_ex_dac_source_i_0.vds
+# Journal file: c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/rfdc_ex_dac_source_i_0_synth_1\vivado.jou
+# Running On: Vulcan, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 16, Host memory: 16907 MB
+#-----------------------------------------------------------
+source rfdc_ex_dac_source_i_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 582.832 ; gain = 184.047
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: rfdc_ex_dac_source_i_0
+Command: synth_design -top rfdc_ex_dac_source_i_0 -part xczu48dr-fsvg1517-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Device 21-403] Loading part xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20820
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2077.602 ; gain = 372.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rfdc_ex_dac_source_i_0' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_dac_source_i_0/synth/rfdc_ex_dac_source_i_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'exdes_rfdac_data_bram_stim' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_rfdac_data_bram_stim.v:55]
+	Parameter mem_size bound to: 131072 - type: integer 
+	Parameter axi_addr_top bound to: 14 - type: integer 
+	Parameter use_div2_clk_0 bound to: 0 - type: integer 
+	Parameter use_div2_clk_1 bound to: 0 - type: integer 
+	Parameter use_div2_clk_2 bound to: 0 - type: integer 
+	Parameter use_div2_clk_3 bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter DEST_SYNC_FF bound to: 5 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6157] synthesizing module 'exdes_xpm_mem_dg' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:51]
+	Parameter wordWidth bound to: 16 - type: integer 
+	Parameter memWordWidth bound to: 8 - type: integer 
+	Parameter addrbWidth bound to: 10 - type: integer 
+	Parameter addrWidth bound to: 12 - type: integer 
+	Parameter use_div2_clk bound to: 0 - type: integer 
+	Parameter mem_size bound to: 131072 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'exdes_xpm_mem_dg_int' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:193]
+	Parameter wordWidth bound to: 16 - type: integer 
+	Parameter memWordWidth bound to: 8 - type: integer 
+	Parameter addrbWidth bound to: 10 - type: integer 
+	Parameter addrWidth bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp_diablo.v:135053]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp_diablo.v:135053]
+INFO: [Synth 8-6157] synthesizing module 'xpm_mem_dg_wrap2' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:531]
+	Parameter wordWidth bound to: 128 - type: integer 
+	Parameter wordsInMemory bound to: 4096 - type: integer 
+	Parameter addrbWidth bound to: 10 - type: integer 
+	Parameter addrWidth bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_mem_dg_sdpram_wrap' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:582]
+	Parameter wordWidth bound to: 128 - type: integer 
+	Parameter wordsInMemory bound to: 4096 - type: integer 
+	Parameter addrbWidth bound to: 10 - type: integer 
+	Parameter addrWidth bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_tdpram' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:9042]
+	Parameter MEMORY_SIZE bound to: 131072 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: block - type: string 
+	Parameter CLOCKING_MODE bound to: independent_clock - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT bound to: 1 - type: integer 
+	Parameter WAKEUP_TIME bound to: disable_sleep - type: string 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 3 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 32 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 32 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 12 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: no_change - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 128 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 128 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 128 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 10 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 2 - type: integer 
+	Parameter WRITE_MODE_B bound to: no_change - type: string 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's.   [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:508]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_tdpram' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:9042]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_mem_dg_sdpram_wrap' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:582]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_mem_dg_wrap2' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:531]
+INFO: [Synth 8-6155] done synthesizing module 'exdes_xpm_mem_dg_int' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:193]
+INFO: [Synth 8-6155] done synthesizing module 'exdes_xpm_mem_dg' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:51]
+INFO: [Synth 8-6157] synthesizing module 'rfdac_exdes_ctrl_rfa' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_exdes_rfdac_ctrl_rfa.sv:333]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 15 - type: integer 
+	Parameter C_NUM_MEMORY_BLOCK bound to: 2 - type: integer 
+	Parameter C_MEMORY_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_MEM_SIZE bound to: 131072 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dac_exdes_cfg_rfa' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_exdes_rfdac_ctrl_rfa.sv:60]
+	Parameter C_MEMORY_ADDR_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_exdes_rfdac_ctrl_rfa.sv:112]
+INFO: [Synth 8-6155] done synthesizing module 'dac_exdes_cfg_rfa' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_exdes_rfdac_ctrl_rfa.sv:60]
+INFO: [Synth 8-6157] synthesizing module 'rfdac_exdes_ctrl_axi_rfa' [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_exdes_rfdac_ctrl_rfa.sv:497]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 15 - type: integer 
+	Parameter C_NUM_MEMORY_BLOCK bound to: 2 - type: integer 
+	Parameter SELECT_MEM_WIDTH bound to: 1 - type: integer 
+	Parameter C_MEMORY_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_MEMORY_DATA_WITH bound to: 32 - type: integer 
+	Parameter C_S_TIMEOUT_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rfdac_exdes_ctrl_axi_rfa' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_exdes_rfdac_ctrl_rfa.sv:497]
+INFO: [Synth 8-6155] done synthesizing module 'rfdac_exdes_ctrl_rfa' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_exdes_rfdac_ctrl_rfa.sv:333]
+INFO: [Synth 8-6155] done synthesizing module 'exdes_rfdac_data_bram_stim' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_rfdac_data_bram_stim.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'rfdc_ex_dac_source_i_0' (0#1) [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_dac_source_i_0/synth/rfdc_ex_dac_source_i_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element gen_wr_b.gen_word_wide.wr_sync.addrblsb_reg was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:1761]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_a.gen_douta_pipe.ena_pipe_reg[0] was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:2379]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_rd_b_synth_template.gen_nc_wide_pipe.rd_sync.addrblsb_reg was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3044]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3069]
+Info : Asymmetric Ram write pattern identified
+Info : Asymmetric Ram read pattern identified
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_ff_reg was removed.  [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_exdes_rfdac_ctrl_rfa.sv:635]
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module rfdac_exdes_ctrl_axi_rfa is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module rfdac_exdes_ctrl_axi_rfa is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module rfdac_exdes_ctrl_axi_rfa is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[3] in module rfdac_exdes_ctrl_axi_rfa is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[2] in module rfdac_exdes_ctrl_axi_rfa is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[1] in module rfdac_exdes_ctrl_axi_rfa is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[0] in module rfdac_exdes_ctrl_axi_rfa is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[2] in module rfdac_exdes_ctrl_axi_rfa is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[1] in module rfdac_exdes_ctrl_axi_rfa is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[0] in module rfdac_exdes_ctrl_axi_rfa is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enable in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[31] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[30] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[29] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[28] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[27] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[26] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[25] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[24] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[23] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[22] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[21] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[20] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[19] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[18] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[17] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[16] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[15] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[14] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[13] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[12] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[11] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port endaddrb[10] in module exdes_xpm_mem_dg_int is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkb_div2 in module exdes_xpm_mem_dg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2184.070 ; gain = 479.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 2202.004 ; gain = 497.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 2202.004 ; gain = 497.168
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.102 . Memory (MB): peak = 2214.047 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rfdc_ex_dac_source_i_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rfdc_ex_dac_source_i_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rfdc_ex_dac_source_i_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rfdc_ex_dac_source_i_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 3 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2284.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 2301.914 ; gain = 17.875
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 2301.914 ; gain = 597.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 2301.914 ; gain = 597.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_sync_send_sync00_div1.data_gen_enable_i . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_tile_en_sync0_div1.data_gen_enable_i . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/dg_slice_00/exdes_xpm_mem_ds_i/xpm_mem_dg_wrap2_i/xpm_mem_dg_sdpram_wrap_i/Ixpm_memory_tdpram. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 2301.914 ; gain = 597.078
+---------------------------------------------------------------------------------
+Specified Maximum Chain Length 3 is non power of 2, used value of 2 (next lowest number)
+Specified Maximum Chain Length 3 is non power of 2, used value of 2 (next lowest number)
+Specified Maximum Chain Length 3 is non power of 2, used value of 2 (next lowest number)
+Specified Maximum Chain Length 3 is non power of 2, used value of 2 (next lowest number)
+INFO: [Synth 8-6041] User specified cascade height of 3 will be used for RAM '"xpm_memory_base:/gen_wr_b.gen_word_wide.mem_reg"'.
+INFO: [Synth 8-6042] User specified cascade height= 3 for RAM '"xpm_memory_base:/gen_wr_b.gen_word_wide.mem_reg"' is not power of 2. It will be rounded down to 2. 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "xpm_memory_base:/gen_wr_b.gen_word_wide.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "xpm_memory_base:/gen_wr_b.gen_word_wide.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "xpm_memory_base:/gen_wr_b.gen_word_wide.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "xpm_memory_base:/gen_wr_b.gen_word_wide.mem_reg"
+INFO: [Synth 8-3971] The signal "xpm_memory_base:/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2301.914 ; gain = 597.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 3     
++---Registers : 
+	              512 Bit    Registers := 1     
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 6     
+	               16 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 10    
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 15    
++---RAMs : 
+	             128K Bit	(4096 X 32 bit)          RAMs := 1     
++---Muxes : 
+	  24 Input  512 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   15 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 8     
+	   2 Input    3 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 19    
+	  22 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[3] in module rfdc_ex_dac_source_i_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[2] in module rfdc_ex_dac_source_i_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[1] in module rfdc_ex_dac_source_i_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[0] in module rfdc_ex_dac_source_i_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m0_div2_axis_clock in module rfdc_ex_dac_source_i_0 is either unconnected or has no load
+Specified Maximum Chain Length 3 is non power of 2, used value of 2 (next lowest number)
+Specified Maximum Chain Length 3 is non power of 2, used value of 2 (next lowest number)
+Specified Maximum Chain Length 3 is non power of 2, used value of 2 (next lowest number)
+Specified Maximum Chain Length 3 is non power of 2, used value of 2 (next lowest number)
+INFO: [Synth 8-6041] User specified cascade height of 3 will be used for RAM '"\inst/dg_slice_00/exdes_xpm_mem_ds_i/xpm_mem_dg_wrap2_i/xpm_mem_dg_sdpram_wrap_i/Ixpm_memory_tdpram /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg"'.
+INFO: [Synth 8-6042] User specified cascade height= 3 for RAM '"\inst/dg_slice_00/exdes_xpm_mem_ds_i/xpm_mem_dg_wrap2_i/xpm_mem_dg_sdpram_wrap_i/Ixpm_memory_tdpram /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg"' is not power of 2. It will be rounded down to 2. 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "\inst/dg_slice_00/exdes_xpm_mem_ds_i/xpm_mem_dg_wrap2_i/xpm_mem_dg_sdpram_wrap_i/Ixpm_memory_tdpram /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "\inst/dg_slice_00/exdes_xpm_mem_ds_i/xpm_mem_dg_wrap2_i/xpm_mem_dg_sdpram_wrap_i/Ixpm_memory_tdpram /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "\inst/dg_slice_00/exdes_xpm_mem_ds_i/xpm_mem_dg_wrap2_i/xpm_mem_dg_sdpram_wrap_i/Ixpm_memory_tdpram /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "\inst/dg_slice_00/exdes_xpm_mem_ds_i/xpm_mem_dg_wrap2_i/xpm_mem_dg_sdpram_wrap_i/Ixpm_memory_tdpram /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg"
+INFO: [Synth 8-3971] The signal "\inst/dg_slice_00/exdes_xpm_mem_ds_i/xpm_mem_dg_wrap2_i/xpm_mem_dg_sdpram_wrap_i/Ixpm_memory_tdpram /xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 2301.914 ; gain = 597.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++--------------------------------------------------------------------------------------------------------------------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                                                               | RTL Object                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++--------------------------------------------------------------------------------------------------------------------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|\inst/dg_slice_00/exdes_xpm_mem_ds_i/xpm_mem_dg_wrap2_i/xpm_mem_dg_sdpram_wrap_i/Ixpm_memory_tdpram /xpm_memory_base_inst | gen_wr_b.gen_word_wide.mem_reg | 4 K x 32(NO_CHANGE)    | W | R | 1 K x 128(NO_CHANGE)   | W | R | Port A and B     | 0      | 4      | 1,1,1,1         | 
++--------------------------------------------------------------------------------------------------------------------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:01:01 . Memory (MB): peak = 2654.617 ; gain = 949.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:01 . Memory (MB): peak = 2656.691 ; gain = 951.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++--------------------------------------------------------------------------------------------------------------------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                                                               | RTL Object                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++--------------------------------------------------------------------------------------------------------------------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|\inst/dg_slice_00/exdes_xpm_mem_ds_i/xpm_mem_dg_wrap2_i/xpm_mem_dg_sdpram_wrap_i/Ixpm_memory_tdpram /xpm_memory_base_inst | gen_wr_b.gen_word_wide.mem_reg | 4 K x 32(NO_CHANGE)    | W | R | 1 K x 128(NO_CHANGE)   | W | R | Port A and B     | 0      | 4      | 1,1,1,1         | 
++--------------------------------------------------------------------------------------------------------------------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].doutb_r2_reg[127] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[127] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].doutb_r2_reg[127] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[127] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].doutb_r2_reg[127] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[127] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].doutb_r2_reg[127] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[127] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].doutb_r2_reg[127] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[127] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].doutb_r2_reg[127] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[127] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].doutb_r2_reg[127] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[127] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].doutb_r2_reg[126] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[126] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].doutb_r2_reg[126] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[126] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].doutb_r2_reg[126] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[126] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].doutb_r2_reg[126] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[126] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].doutb_r2_reg[126] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[126] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].doutb_r2_reg[126] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[126] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].doutb_r2_reg[126] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[126] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].doutb_r2_reg[125] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[125] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].doutb_r2_reg[125] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[125] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].doutb_r2_reg[125] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[125] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].doutb_r2_reg[125] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[125] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].doutb_r2_reg[125] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[125] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].doutb_r2_reg[125] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[125] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].doutb_r2_reg[125] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[125] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].doutb_r2_reg[124] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[124] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].doutb_r2_reg[124] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[124] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].doutb_r2_reg[124] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[124] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].doutb_r2_reg[124] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[124] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].doutb_r2_reg[124] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[124] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].doutb_r2_reg[124] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[124] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].doutb_r2_reg[124] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[124] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].doutb_r2_reg[123] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[123] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].doutb_r2_reg[123] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[123] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].doutb_r2_reg[123] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[123] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].doutb_r2_reg[123] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[123] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].doutb_r2_reg[123] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[123] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].doutb_r2_reg[123] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[123] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].doutb_r2_reg[123] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[123] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].doutb_r2_reg[122] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[122] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].doutb_r2_reg[122] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[122] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].doutb_r2_reg[122] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[122] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].doutb_r2_reg[122] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[122] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].doutb_r2_reg[122] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[122] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].doutb_r2_reg[122] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[122] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].doutb_r2_reg[122] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[122] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].doutb_r2_reg[121] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[121] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].doutb_r2_reg[121] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[121] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].doutb_r2_reg[121] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[121] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].doutb_r2_reg[121] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[121] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].doutb_r2_reg[121] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[121] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].doutb_r2_reg[121] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[121] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].doutb_r2_reg[121] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[121] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].doutb_r2_reg[120] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[120] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].doutb_r2_reg[120] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[120] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].doutb_r2_reg[120] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[120] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].doutb_r2_reg[120] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[120] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].doutb_r2_reg[120] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[120] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].doutb_r2_reg[120] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[120] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].doutb_r2_reg[120] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[120] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].doutb_r2_reg[119] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[119] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].doutb_r2_reg[119] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[119] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].doutb_r2_reg[119] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[119] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].doutb_r2_reg[119] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[119] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].doutb_r2_reg[119] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[119] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].doutb_r2_reg[119] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[119] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].doutb_r2_reg[119] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[119] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].doutb_r2_reg[118] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[118] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].doutb_r2_reg[118] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[118] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].doutb_r2_reg[118] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[118] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].doutb_r2_reg[118] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[118] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].doutb_r2_reg[118] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[118] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].doutb_r2_reg[118] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[118] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].doutb_r2_reg[118] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[118] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].doutb_r2_reg[117] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[117] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].doutb_r2_reg[117] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[117] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].doutb_r2_reg[117] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[117] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].doutb_r2_reg[117] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[117] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].doutb_r2_reg[117] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[117] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].doutb_r2_reg[117] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[117] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].doutb_r2_reg[117] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[117] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].doutb_r2_reg[116] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[116] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].doutb_r2_reg[116] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[116] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].doutb_r2_reg[116] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[116] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].doutb_r2_reg[116] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[116] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].doutb_r2_reg[116] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[116] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].doutb_r2_reg[116] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[116] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].doutb_r2_reg[116] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[116] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].doutb_r2_reg[115] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[115] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].doutb_r2_reg[115] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[115] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].doutb_r2_reg[115] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[115] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].doutb_r2_reg[115] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[115] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].doutb_r2_reg[115] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[115] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].doutb_r2_reg[115] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[115] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].doutb_r2_reg[115] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[115] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].doutb_r2_reg[114] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[114] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].doutb_r2_reg[114] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[114] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[2].doutb_r2_reg[114] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[114] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[3].doutb_r2_reg[114] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[114] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[4].doutb_r2_reg[114] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[114] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[5].doutb_r2_reg[114] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[114] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[6].doutb_r2_reg[114] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[114] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[0].doutb_r2_reg[113] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[113] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Synth 8-4765] Removing register instance (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[1].doutb_r2_reg[113] ) from module (rfdc_ex_dac_source_i_0) as it is equivalent to (\inst/dg_slice_00/exdes_xpm_mem_ds_i/barrel_shift.genblk4[7].doutb_r2_reg[113] ) and driving same net [c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:408]
+INFO: [Common 17-14] Message 'Synth 8-4765' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:01:02 . Memory (MB): peak = 2675.770 ; gain = 970.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 2686.121 ; gain = 981.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 2686.121 ; gain = 981.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 2686.121 ; gain = 981.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 2686.121 ; gain = 981.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 2686.121 ; gain = 981.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 2686.121 ; gain = 981.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     3|
+|2     |LUT2     |    18|
+|3     |LUT3     |    64|
+|4     |LUT4     |    34|
+|5     |LUT5     |    59|
+|6     |LUT6     |   304|
+|7     |MUXF7    |    21|
+|8     |MUXF8    |     1|
+|9     |RAMB36E2 |     4|
+|10    |SRLC32E  |   128|
+|11    |FDRE     |   953|
+|12    |FDSE     |     5|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 2686.121 ; gain = 981.285
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:01:06 . Memory (MB): peak = 2686.121 ; gain = 881.375
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 2686.121 ; gain = 981.285
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 2686.121 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2739.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 839b2d8d
+INFO: [Common 17-83] Releasing license: Synthesis
+166 Infos, 57 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:29 . Memory (MB): peak = 2739.902 ; gain = 2105.457
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2739.902 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/rfdc_ex_dac_source_i_0_synth_1/rfdc_ex_dac_source_i_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP rfdc_ex_dac_source_i_0, cache-ID = 0bf6ae0886776048
+INFO: [Coretcl 2-1174] Renamed 12 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2739.902 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Vulcan/Design_Tool/Board_Demo/ZCU208/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.runs/rfdc_ex_dac_source_i_0_synth_1/rfdc_ex_dac_source_i_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rfdc_ex_dac_source_i_0_utilization_synth.rpt -pb rfdc_ex_dac_source_i_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May  6 10:59:48 2024...
